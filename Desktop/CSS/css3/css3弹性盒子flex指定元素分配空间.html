@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3指定元素分配空间</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        /*flex给指定元素分配空间*/
+        /*auto 计算值是1 1 auto*/
+        /*initial 计算值是0 1 auto*/
+        /*none 计算值是0 0 auto*/
+        /*inherit 从父类继承*/
+        /*flex-grow 弹性盒子拓展比例*/
+        /*flex-shink 弹性盒子收缩比例*/
+        /*flex-basis 弹性盒子基准值*/
+
+        .flex-container{
+            width: 80%;
+            margin: auto;
+            height:500px;
+            background-color: #28e1ff;
+            display: flex;
+            border-radius:10px;
+        }
+        .flex-item{
+            width: 100px;
+            height: 300px;
+            margin: 20px;
+            background-color: red;
+            text-align: center;
+        }
+        .item1{
+            flex:2;
+        }
+        .item2{
+            flex:1;
+        }
+        .item3 {
+            flex: 1;
+        }
+        .item4{
+            flex:auto;
+        }
+        .item5{
+            flex:initial;
+        }
+    </style>
+</head>
+<body>
+<div class="flex-container">
+    <div class="flex-item item1">
+        flex:2
+        <p>这个盒子占宽度的2/4</p>
+    </div>
+    <div class="flex-item item2">
+        flex:1
+        <p>这个盒子占宽度的1/4</p>
+    </div>
+    <div class="flex-item item3">
+        flex:3
+        <p>这个盒子占宽度的1/4</p>
+    </div>
+</div>
+<div class="flex-container" style="margin-top: 10px">
+    <div class="flex-item item4">
+        flex:auto
+    </div>
+    <div class="flex-item item4">
+        flex:auto
+        <p>1 1 auto</p>
+    </div>
+    <div class="flex-item item4">
+        flex:auto
+    </div>
+</div>
+<div class="flex-container" style="margin-top: 10px">
+    <div class="flex-item item5">
+        flex:initial
+    </div>
+    <div class="flex-item item5">
+        flex:initial
+        <p>0 1 auto</p>
+    </div>
+    <div class="flex-item item5">
+        flex:initial
+    </div>
+</div>
+</body>
+</html>

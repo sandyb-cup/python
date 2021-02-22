@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css网页布局不想等的列</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        /*设置网页头部*/
+        .hande{
+            background-color: #f1f1f1;
+            color:black;
+            font-size: 2px;
+            padding: 20px;
+            text-align: center;
+            display: block;
+        }
+        /*设置网页搜索框*/
+        .search{
+            background-color: black;
+        }
+        /*设置网页搜索框中的文字 变框*/
+        .search a{
+            font-size: 3px;
+            display: inline-block;
+            color: #f1f1f1;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+        /*设置边框点击后事件*/
+        .search a:hover{
+            background-color: #f1f1f1;
+            color:#000000;
+        }
+        /*设置两侧内容区域*/
+        .side{
+            width:25%;
+            float:left;
+            text-align:left;
+        }
+        /*设置中间内容区域*/
+        .middle{
+            width: 50%;
+            float:left;
+            text-align:left;
+        }
+        /*设置内容中文字的位置*/
+        h2.cloumn{
+            text-align: center;
+        }
+        /*设置内容后面取消浮动*/
+        .row:after{
+            content:'';
+            display:table;
+            clear:both;
+        }
+        /*.设置底部*/
+        .bottom{
+            width:100%;
+            background-color: #f1f1f1;
+            position: fixed;
+            bottom:0px;
+        }
+        .bottom.text{
+            font-size: 2px;
+            color: black;
+            text-align: center;
+            padding:12px;
+        }
+        /*设置窗口响应式*/
+        @media screen and (max-width: 1000px){
+            .side, .middle{width:100%}
+        }
+    </style>
+</head>
+<body>
+    <div class="hande">
+        网页布局不相同的列
+    </div>
+    <div class="search">
+        <a href="">链接</a>
+        <a href="">链接</a>
+        <a href="">链接</a>
+    </div>
+    <div class='row'>
+        <div class="side">
+            <h2 class="cloumn">只是第一列</h2>
+            <p>
+                这里是一些文字 可以是Hello world 也可以是你好世界 当然也可以是你好地球 这里你可以写一些小说啥的 反正这里你想填啥都行
+                这里是一些文字 可以是Hello world 也可以是你好世界 当然也可以是你好地球 这里你可以写一些小说啥的 反正这里你想填啥都行
+                <br><b style="color:red">这一列的宽度是25%</b>
+            </p>
+
+        </div>
+        <div class="middle">
+            <h2 class="cloumn">这是第二列</h2>
+            <p>
+                这里是一些文字 可以是Hello world 也可以是你好世界 当然也可以是你好地球 这里你可以写一些小说啥的 反正这里你想填啥都行
+                这里是一些文字 可以是Hello world 也可以是你好世界 当然也可以是你好地球 这里你可以写一些小说啥的 反正这里你想填啥都行
+                这里填写一些文字可以是Hello world也可以是你好世界当然也可以是你好地球
+                <br><b style="color:red">这一列的宽度是50%</b>
+            </p>
+        </div>
+        <div class="side">
+            <h2 class="cloumn">这是第三列</h2>
+            <p>
+                这里是一些文字 可以是Hello world 也可以是你好世界 当然也可以是你好地球 这里你可以写一些小说啥的 反正这里你想填啥都行
+                这里是一些文字 可以是Hello world 也可以是你好世界 当然也可以是你好地球 这里你可以写一些小说啥的 反正这里你想填啥都行
+                这里是一些文字 可以是Hello world 也可以是你好世界 当然也可以是你好地球 这里你可以写一些小说啥的 反正这里你想填啥都行
+                这里填写一些文字去可以使Hello world也可以是你好世界当然也可以是你好地球
+                <br><b style="color: red">这一列的宽度是25%</b>
+            </p>
+        </div>
+    </div>
+<div class="bottom">
+    <p class="bottom text">这时底部文字 这里放一些公司名称 版权等等</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3 延时动画播放效果</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        div{
+            width:10%;
+            padding: 20px;
+            background-color: #28e1ff;
+            transition-property: all;
+            transition-duration: 2s;
+            transition-delay: 2s;
+            transition-timing-function: cubic-bezier(0.5,0.1,0.6,1);
+            border-radius: 10px;
+            white-space: nowrap;
+            overflow: scroll;
+        }
+        div:hover{
+            width: 100%;
+            background-color: #07ff0e;
+        }
+    </style>
+</head>
+<body>
+<div>
+鼠标放置两秒 因为使用了transition-delay:2s
+</div>
+</body>
+</html>

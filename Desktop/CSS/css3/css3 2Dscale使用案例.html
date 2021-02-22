@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3 2Drotate使用</title>
+    <style>
+        body{
+            margin: 0;
+            text-align: center;
+        }
+        div{
+            width:20%;
+            height:50px;
+            background-color: #28e1ff;
+            border-radius: 10px;
+            display: block;
+        }
+        div#div{
+            transform: scale(1,3);
+             margin: 150px 0;
+            overflow: scroll;
+            /*-ms-transform: scale(2,3);*/
+            /*-webkit-transform: scale(2,3);*/
+        }
+
+    </style>
+</head>
+<body>
+<div>
+    这是没有使用scale属性的显示效果
+</div>
+<div id="div">
+    这是使用了scale属性的容器显示效果 scale是一个放大的效果第一个参数是宽度的放大参数 第二个参数是元素高度的放大参数
+</div>
+</body>
+</html>

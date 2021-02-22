@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3使用margin居中元素</title>
+    <style>
+        body{
+            margin:0;
+        }
+
+        .flex-container{
+            display: flex;
+            height: 600px;
+            width: 80%;
+            background-color: #28e1ff;
+            border-radius: 20px;
+            /*完美的居中方式-->使用margin:auto*/
+            margin:auto;
+            overflow: hidden;
+            justify-content: space-around;
+        }
+        .flex-item{
+            height: 200px;
+            width: 100px;
+            background-color: #07ff0e;
+            margin-right: 20px;
+            text-align: center;
+            border-radius: 5px;
+            margin-left:20px;
+        }
+        .flex-item:first-child{
+            margin-right: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">flex item1</div>
+        <div class="flex-item">flex item2</div>
+        <div class="flex-item">flex item3</div>
+    </div>
+</body>
+</html>

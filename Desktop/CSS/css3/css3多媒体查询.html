@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3多媒体查询</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        /*多媒体查询参数*/
+        /*all用于所有的多媒体类型设备*/
+        /*print用于打印机*/
+        /*screen 用于平板设备 电脑 手机*/
+        /*speed用于阅读器设备*/
+        @media screen and (max-width: 1000px) {
+            body{
+                background-color: pink;
+            }
+        }
+    </style>
+</head>
+<body>
+<h2>这是多媒体简单案例</h2>
+<p>
+    当屏幕大小小于480px时背景颜色会变成粉红色
+</p>
+</body>
+</html>

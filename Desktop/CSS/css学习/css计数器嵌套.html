@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css计数器嵌套</title>
+    <style>
+        body{
+            margin:0px;
+            counter-reset: contens1;
+        }
+        div:before{
+            /*#这里要注意一下计数器的使用计数器的计数需要重置计数才能使用 不然计数器使用不了*/
+            counter-reset: contens2;
+            counter-increment:contens1;
+            content: "contens:" counter(contens1);
+        }
+        p:before{
+            counter-increment:contens2;
+            content:counter(contens1)'.'counter(contens2);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        这是段落一 <br>
+        <p>这是一行</p>
+        <p>这是一行</p>
+    </div>
+    <div>
+        这是段落2 <br>
+        <p>这是一行</p>
+        <p>这是一行</p>
+    </div>
+</body>
+</html>

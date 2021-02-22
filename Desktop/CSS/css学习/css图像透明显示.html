@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css图像透明显示</title>
+    <style>
+        body{
+            margin:0px;
+        }
+        div.img{
+            width:100%;
+        }
+        div.img img{
+            width:100%;
+            height:auto;
+            opacity: 0.5;
+            /*opacity0-1值越小图片越透明*/
+            /*IE8早期使用滤镜使用方法*/
+            /*这个方法在现在没有明显作用*/
+            /*filter:alpha(opacity=50);*/
+        }
+        div.img img:hover{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+<div class="img">
+    <div class="img">
+        <a href="http://www.baidu.com">
+            <img src="images/woerwo5.png" alt="沃尔沃官方图片">
+        </a>
+    </div>
+</div>
+</body>
+</html>

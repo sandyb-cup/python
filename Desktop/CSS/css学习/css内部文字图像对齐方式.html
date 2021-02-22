@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css图像文字对齐方式</title>
+    <style>
+        img.top{
+            vertical-align: text-top;
+        }
+        img.bottom{
+            vertical-align: text-bottom;
+        }
+        img.after-edge{
+            vertical-align: text-after-edge;
+        }
+        img.before-edge{
+            vertical-align: text-before-edge;
+        }
+    </style>
+</head>
+<body>
+    <p><img src="images/tree.jpg" alt="树">默认对齐方式</p>
+     <p><img class='top' src="images/tree.jpg" alt="树">上方对齐方式</p>
+    <p><img class="bottom" src="images/tree.jpg" alt="树">底部对齐方式</p>
+    <p><img class="after-edge" src="images/tree.jpg" alt="树">之后边缘对齐方式</p>
+    <p><img class = 'before-edge' src="images/tree.jpg" alt="树">之前边缘对齐方式</p>
+
+</body>
+</html>

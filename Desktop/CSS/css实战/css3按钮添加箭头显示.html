@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3按钮添加箭头显示</title>
+    <style>
+        body{
+            margin:0;
+        }
+        .button{
+            width: 10%;
+            padding:10px;
+            background-color: #ffad1c;
+            color:white;
+            border:none;
+            border-radius: 10px;
+            position:relative;
+            left:45%;
+            top:30px;
+            text-align: center;
+            cursor:pointer;
+            transition: all 0.8s;
+        }
+        /*设置按钮字体显示元素*/
+        .button span{
+            transition-duration: 0.8s;
+            display: inline-block;
+            position:relative;
+            left:10px;
+        }
+        /*这个:span:after主要控制字体显示设置*/
+        .button span:after{
+             content: '>>';
+            position:relative;
+            opacity: 0;
+            transition-duration: 0.8s;
+        }
+        /*当鼠标放在button上面span属性向右填充20px*/
+        .button:hover span{
+            padding-right: 20px;
+        }
+        /*当鼠标停在按钮上面span:after元素opacity值变成1 */
+        .button:hover span:after{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+<button class="button">
+    <span style="text-align: center">
+        Button
+    </span>
+</button>
+</body>
+</html>

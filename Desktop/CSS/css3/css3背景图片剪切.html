@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3背景图片的剪切</title>
+    <style>
+        body{
+            magin:0px;
+        }
+        div{
+            background-image: url("images/背景图片墙纸.gif");
+            padding:15px;
+            /*设置变框样式*/
+            border:10px dotted black;
+            margin: 10px;
+
+        }
+        #example{
+             background-clip:border-box;
+        }
+        #example2{
+            background-clip: padding-box;
+        }
+        #example3{
+            background-clip: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div id="example">
+        <h2>
+            这是剪切边框的案例 相当与没剪切
+        </h2>
+    </div>
+<div id="example2">
+    <h2>
+        这是剪切填充的案例 切到填充部分
+    </h2>
+
+</div>
+<div id="example3">
+    <h2>
+        这是剪切文本内容的案例 切到内容部分
+    </h2>
+</div>
+</body>
+</html>

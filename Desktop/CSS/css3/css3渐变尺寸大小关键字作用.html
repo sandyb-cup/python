@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3关键字作用</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        div{
+            height: 300px;
+            width: 500px;
+        }
+        #gradient1{
+            background-image: radial-gradient(closest-corner at 50% 60%,yellow,red,black);
+        }
+        #gradient2{
+            background-image: radial-gradient(farthest-corner at 50% 60%,yellow,red,black);
+        }
+        #gradient3{
+            background-image: radial-gradient(closest-side at 50% 60%,yellow,red,black);
+        }
+        #gradient4{
+            background-image: radial-gradient(farthest-side at 50% 60%,yellow,red,black);
+        }
+    </style>
+</head>
+<body>
+<h2>最近角落</h2>
+<p>向最近角落延伸</p>
+<div id="gradient1"></div>
+<h2>最远角落延伸</h2>
+<p>向最远角落延伸</p>
+<div id="gradient2"></div>
+<h2>最近边延伸</h2>
+<p>向最近边延伸</p>
+<div id="gradient3"></div>
+<h2>最远边延伸</h2>
+<p>向最远边延伸</p>
+<div id="gradient4"></div>
+</body>
+</html>

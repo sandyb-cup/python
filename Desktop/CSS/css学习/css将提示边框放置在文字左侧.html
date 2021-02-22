@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css将提示变框放置在文字左侧</title>
+    <style>
+        .tooltips{
+            text-align: center;
+            padding:2px 4px;
+            display: inline-block;
+
+        }
+        .tooltips .tooltiptext{
+            text-align: center;
+            text-decoration: none;
+            font-size: 1px;
+            visibility: hidden;
+            padding: 4px 2px;
+            background-color: darkorange;
+            border-radius: 8px;
+            position: absolute;
+            left: 36%;
+            /*控制文字显示位置由这个参数控制*/
+        }
+        .tooltiplabe{
+            background-color: #a7ff3c;
+            color: black;
+            border-radius: 8px;
+            padding: 4px 4px;
+        }
+        .tooltips:hover .tooltiptext{
+            visibility: visible;
+        }
+    </style>
+</head>
+<body style="text-align: center">
+    <div class="tooltips">
+
+        <span class="tooltiplabe">鼠标放在这会有提示</span>
+        <span class="tooltiptext">这是提示文本</span>
+
+    </div>
+</body>
+</html>

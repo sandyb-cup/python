@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css提示显示在顶部或者是底部</title>
+    <style>
+        body{
+            margin:0px;
+        }
+        .tooltip{
+            background-color: #a7ff3c;
+            color: black;
+            font-size: 2px;
+            border-radius: 8px;
+            width: 10%;
+            padding: 10px 20px;
+            display: inline-block;
+            text-align: center;
+            position: absolute;
+            top:20px;
+            left: 0px;
+        }
+        /*提示文本设置*/
+        .tooltip .tipcontent{
+
+            font-size: 1px;
+            background-color: #07ff0e;
+            color: black;
+            border-radius: 8px;
+            padding: 2px 4px;
+            visibility: hidden;
+            /*使用绝对位置设定提示文本位置*/
+            position: absolute;
+            bottom:-21px;
+            left: 0px;
+        }
+        /*显示文本激活*/
+        .tooltip:hover .tipcontent{
+
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <p class="tooltip">
+        这是提示按钮
+        <span class="tipcontent">这是提示文本</span>
+    </p>
+</body>
+</html>

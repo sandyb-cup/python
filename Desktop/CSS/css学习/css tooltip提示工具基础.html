@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css tooltip提示工具</title>
+    <style>
+        /*提示工具容器*/
+        .tooltip{
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dot-dash black;
+            /*在线提示文字下面显示一条线*/
+        }
+        /*显示文本*/
+        .tooltip .tooltiptext{
+            visibility: hidden;
+            width: 120px;
+            background-color: #a7ff3c;
+            color: #555555;
+            text-align: center;
+            padding: 5px 2px;
+            /*变框倒角*/
+            border-radius: 6px;
+
+            /*#定位*/
+            position: absolute;
+            z-index: -1;
+
+        }
+        /*设置鼠标放上去显示提示功能*/
+        .tooltip:hover .tooltiptext{
+            visibility: visible;
+        }
+    </style>
+
+</head>
+<body>
+     <div class="tooltip">
+         鼠标放到我上面去
+         <span class="tooltiptext">提示文本</span>
+     </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3多列</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        div{
+            width: 50%;
+            position: absolute;
+            background-color: #07ff0e;
+        }
+        .newspaper{
+            /*创建多列*/
+            column-count: 3;
+        }
+    </style>
+
+</head>
+<body>
+<span style="color:red"><b>注意 :</b>下面是使用了列属性的段落</span>
+<p class="newspaper">
+    这是一个段落 这是一个段落 这里分了三列 这是一个段落 这是一个段落 这里分了三列 这是一个段落 这是一个段落 这里分了三列 这是一个段落 这是一个段落 这里分了三列 这是一个段落 这是一个段落 这里分了三列 这是一个段落 这是一个段落 这里分了三列 这是一个段落 这是一个段落 这里分了三列
+</p>
+<span style="font-size: 4px;color: red">可以看到上面的段落它的列宽是平均分的</span>
+</body>
+</html>

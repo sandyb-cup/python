@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css顶部箭头底部提示框</title>
+    <style>
+        body{
+            text-align: center;
+            margin: 0px;
+        }
+        /*按钮文本格式 设置*/
+        .tooltip{
+            width: 10%;
+            background-color: #a7ff3c;
+            color: black;
+            font-size: 1px;
+            padding: 10px 20px;
+            text-align: center;
+            position:relative;
+            display: inline-block;
+            border-radius: 8px;
+            top:45px;
+
+        }
+        /*提示文本格式设置*/
+        .tooltip .tipcontent{
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 2px 4px;
+            position:absolute;
+            top:40px;
+            left: 25%;
+            display: block;
+            visibility: hidden;
+            border-radius: 4px;
+        }
+        /*提示文本显示条件*/
+        .tooltip:hover .tipcontent{
+            visibility: visible;
+        }
+        /*设置箭头*/
+        .tooltip .tipcontent::before{
+            /*注意conten不能写成none这样不会显示小箭头 只能写成""只能留一个空*/
+            content: '';
+            position: absolute;
+            bottom:100%;
+            margin-left: -3px;
+            left: 50%;
+            border-width: 3px;
+            border-color:transparent transparent black transparent;;
+            border-style: solid;
+
+        }
+    </style>
+</head>
+<body>
+        <p class="tooltip">
+            这是一个提示按钮
+            <span class="tipcontent">这是提示文本</span>
+        </p>
+
+</body>
+</html>

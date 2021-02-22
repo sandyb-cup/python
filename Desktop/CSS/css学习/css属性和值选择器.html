@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css属性和值选择器</title>
+    <style>
+        /*只有title属性等于show_style时候文本显示才是下面的样式*/
+        [title=show_style]{
+            color: #07ff0e;
+        }
+    </style>
+</head>
+<body>
+<!--    这个段落显示的定义样式-->
+    <p title="show_style">这是自己定义的文本显示样式</p>
+<!--这个段落显示的不是定义的样式-->
+    <p title="这是一个段落">这是一个段落</p>
+
+
+</body>
+</html>

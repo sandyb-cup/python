@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3 过渡多个元素一起改变样式</title>
+    <style>
+        body{
+            margin:0;
+        }
+        div{
+            width: 10%;
+            background-color: #07ff0e;
+            transition: width 2s,padding 2s,transform 2s, background-color 2s;
+            text-align: left;
+            padding: 30px;
+            border-radius: 10px;
+            overflow: scroll;
+            white-space:nowrap;
+        }
+        div:hover{
+            width:40%;
+            padding:60px;
+            transform: rotate(360deg);
+            background-color: #28e1ff;
+        }
+    </style>
+</head>
+<body>
+<div>
+    这是多个元素过渡样式显示
+</div>
+</body>
+</html>

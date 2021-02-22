@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3渐变使用多个颜色节点</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        div{
+            height: 300px;
+            background-color: red;         /*在浏览器不支持渐变的情况下显示*/
+            margin: 20px;
+        }
+        #gradient1{
+
+            background-image: linear-gradient(red,greenyellow,yellow);
+        }
+        #gradient2{
+            background-image: linear-gradient(red,greenyellow,yellow,gold,cornflowerblue,orange,orchid);
+        }
+        #gradient3{
+            background-image: linear-gradient(red 10%, greenyellow 50%, yellow 10%);
+        }
+    </style>
+</head>
+<body>
+
+<h3>三个颜色节点</h3>
+<div id="gradient1"></div>
+<h3>多个颜色节点</h3>
+<div id="gradient2"></div>
+<h3>设置颜色节点的百分比 如果颜色设置了百分比它的颜色显示宽度就不是平均分布</h3>
+<div id="gradient3"></div>
+</body>
+</html>

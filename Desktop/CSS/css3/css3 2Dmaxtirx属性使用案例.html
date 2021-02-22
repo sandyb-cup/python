@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3 2Dmatrix使用案例</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        div{
+            width: 20%;
+            height: 50px;
+            background-color: #07ff0e;
+            border-radius: 10px;
+        }
+        div#div{
+            margin: 100px 0;
+            /*第一个参数是x轴缩放*/
+            transform: matrix(1,0,0,0,0,0);
+            /*-ms-transform: matrix(0.866,0.5,-0.5,0.866,0,0);*/
+            /*-webkit-transform: matrix(0.866,0.5,-0.5,0.866,0,0);*/
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+<div>
+    这是没有使用matrix属性的显示样式
+</div>
+<div id="div">
+    这是使用了matrix属性的显示样式 它有6个参数值包含参数旋转 缩放 移动 倾斜功能
+</div>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            /* 弹性盒子改变一行元素的显示方向 right to left*/
+            /* direction: rtl; -->*/
+        }
+        /*flex-rection指定子容器在父容器中的位置*/
+        /*值有row 子元素从左往右进行排布*/
+        /*row-reverse 子元素从右往左进行排布*/
+        /*column 纵向排列 从上往下进行排列*/
+        /*column-reverse 纵向倒置排列 从下往上进行排列*/
+        
+        .flex-container {
+            display: flex;
+            width: 30%;
+            height: 300px;
+            background-color: chartreuse;
+            border-radius: 50px;
+            /*flex-direction: column-reverse;*/
+        }
+        
+        .flex-text {
+            width: 30%;
+            height: 100px;
+            background-color: aqua;
+            margin: 2px;
+            text-align: center;
+            border-radius: 5px;
+        }
+    </style>
+    <title>css3弹性容器</title>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class='flex-text'>flex item1</div>
+        <div class="flex-text">flex item2</div>
+        <div class="flex-text">flex item3</div><br>
+
+    </div>
+    <p>
+        <b>注意:</b>弹性盒子是由弹性容器跟弹性元素组成的 通常情况下一个弹性容器只有一行 弹性容器里面的弹性元素以一行的形式显示出来
+    </p>
+</body>
+
+</html>

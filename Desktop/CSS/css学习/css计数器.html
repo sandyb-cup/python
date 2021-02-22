@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css计数器</title>
+    <style>
+        body{
+            margin: 0px;
+            /*重置计数  section截断*/
+            counter-reset: section;
+        }
+        h2::before{
+            counter-increment: section;
+            /*counter-increment: ;计数自增加1*/
+            /*内容显示*/
+            content: 'Section' counter(section)":";
+        }
+    </style>
+</head>
+<body>
+<h1>使用css计数器</h1>
+    <h2>HTML教程</h2>
+    <h2>CSS教程</h2>
+    <h2>javascript教程</h2>
+</body>
+</html>

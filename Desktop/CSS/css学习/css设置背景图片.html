@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css设置背景图片</title>
+    <style type="text/css">
+        /*在style中导入test/css的方法 类似于包*/
+        body
+        {
+            background-image: url("images/woerwo2.png");
+            /*这个图片显示是按照网页大小自己调整大小的不是像html中的img一样它是一个背景图片的设置*/
+        }
+        .font_show{
+            /*设定一个字体属性之后在显示字体中调用该属性 这个属性的名字是font_show*/
+            color: darkslategray;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app"><!--div定义文档中的分区或节 这个id值是一个唯一的参数变量-->
+        <span class="font_show">Hello world</span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css focus伪类</title>
+
+    <style>
+        body{
+                background-image: url("images/apple.png");
+                background-size: cover;
+
+            }
+        input:focus{
+            background-color: lavenderblush;
+            /*width: 120px;*/
+            /*height: 10px;*/
+        }
+        div.form{
+            font-family: Times Serif;
+            font-size: 2px;
+            width: 20%;
+            display: block;
+            height: 30%;
+            padding:10px;
+            text-align: left;
+            color: red;
+            line-height: 30px;
+            border:3px solid #28e1ff;
+            position: relative;
+            left:0px;
+            top:50%;
+
+            /*position: center;*/
+            /*background-image: url("images/dongman4.png");*/
+        }
+    </style>
+</head>
+<body>
+<div class="form">
+    <form action="demo-test.py" method="get">
+            Firstname:
+        <input type="text" name="fname" width="120px" height="10px"><br>
+        Lastname:
+        <input type="text" name="lname" width="120px" height="10px"><br>
+        <input type="submit" value="提交">
+    </form>
+</div>
+<!--<div class="form">大家好我是一个盒子</div>-->
+</body>
+</html>

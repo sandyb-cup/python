@@ -1,0 +1,77 @@
+body{
+    margin: 0px;
+    /*background-image: url("images/动态壁纸.gif");*/
+    background-color: #bbbbbb;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+div.info{
+    position: absolute;
+    width:40%;
+    height: 40%;
+    left:30%;
+    top:20%;
+    /*border:2px solid black;*/
+}
+#hand_profile{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    /*border:1px solid black;*/
+    overflow: hidden;
+    margin: auto;
+}
+#user_name{
+    position: relative;
+    margin:auto;
+    color: white;
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+    /*border:1px solid black;*/
+    text-align: center;
+    margin-top: 15px;
+}
+input[type=password]{
+    position: relative;
+    left: 37.5%;
+    width: 25%;
+    height: 20px;
+    opacity: 0.5;
+    border-radius: 20px;
+    margin-top:10px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    /*border:none;*/
+    outline: none;
+    border:none;
+    visibility:visible;
+}
+button[type=submit]{
+    position: relative;
+    left: 190px;
+    top:4px;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    background-image: url("images/exit2.jpeg");
+    background-repeat: no-repeat;
+    background-color: white;
+    outline: none;
+    border:none;
+}
+
+#tip_text {
+    /*border: 1px solid black;*/
+    height: 20px;
+    text-align: center;
+}
+#tip_text a{
+    font-size: 12px;
+    color: white;
+    font-family: 'Comic Sans MS';
+    text-decoration-color: black;
+    padding-bottom: 2px;
+    text-decoration-skip: edges;
+    letter-spacing: 1px;
+}

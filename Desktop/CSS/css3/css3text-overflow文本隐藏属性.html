@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3文本隐藏属性</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        #text-box{
+            border: 1px #000000 solid;
+            overflow: scroll;
+            width: 20%;
+            /*禁止文字换行**/
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+<h style="color: #07ff0e">这是text-overflow:ellipis属性显示样式</h>
+    <div id="text-box" style="text-overflow: ellipsis">
+        这是使用了text-overflow:ellisiss属性显示出来的样式
+    </div><br><br>
+<h style="color: red">这是使用了&quot;text-overflow:&gt;&gt;显示出来的文字样式</h>
+<div id="text-box" style="text-overflow:'>>'">
+    这是文本显示样式
+</div>
+<br><br>
+<h>这是text-overflow:slip属性显示的文本样式</h>
+<div id="text-box">
+    这是一些文本显示你可以在这里添加一些文本
+</div>
+</body>
+</html>

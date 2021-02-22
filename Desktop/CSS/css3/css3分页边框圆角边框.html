@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3边框圆角边框</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .pagination{
+            position:fixed;
+            bottom: 0px;
+            left:50px;
+            margin: 0px;
+            display: block;
+        }
+        .pagination li{
+            display:inline;
+        }
+        /*参数解释li元素下面的最后一个a元素设置样式*/
+        .pagination li:last-child a{
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        .pagination li:first-child a{
+            border-top-left-radius: 5px;
+            border-bottom-left-radius:5px;
+        }
+        .pagination li a{
+            /*添加边框间隔*/
+            margin-right:10px;
+            text-decoration: none;
+            color: black;
+            border:1px solid #bbbbbb;
+            padding: 10px 20px;
+            float: left;
+            /*设置字体大小*/
+            font-size: 12px;
+            text-align: center;
+        }
+       ul.pagination li a.active{
+            background-color:#06ff12;
+            color:white;
+            border-radius: 5px;
+            border:solid 1px black;
+        }
+        .pagination li a:hover:not(.active){
+            background-color: #dddddd;
+            color:black;
+        }
+    </style>
+</head>
+<body>
+<ul class="pagination">
+    <li><a href="#">«</a></li>
+    <li><a href="#">1</a></li>
+    <li><a class="active" href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">6</a></li>
+    <li><a href="#">7</a></li>
+    <li><a href="#">»</a></li>
+
+</ul>
+</body>
+</html>

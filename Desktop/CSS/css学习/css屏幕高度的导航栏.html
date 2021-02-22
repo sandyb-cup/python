@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css屏幕高度的导航栏</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        /*这个条件要加上要不然导航栏的显示是不会贴网页边缘上面的*/
+        ul{
+            background-color: #f1f1f1;
+            margin:0px;
+            padding: 0px;
+            font-size: 1px;
+            width:120px;
+            height: 100%;
+            list-style-type: none;
+
+            position: fixed;
+            /*这个参数一定要加上要不然边框显示不出来*/
+            overflow: auto;
+        }
+        li a{
+            display: block;
+            text-align: left;
+            padding: 8px 16px;
+            text-decoration: None;
+            color: #000000;
+        }
+        li a.active{
+            background-color: #a7ff3c;
+            color: white;
+        }
+        li a:hover:not(.active){
+            background-color: #555555;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a class="active" href="#home">主页</a></li>
+        <li><a href="#contact">链接</a></li>
+        <li><a href="#news">新闻</a></li>
+        <li><a href="#about">关于</a></li>
+    </ul>
+
+<div style="margin-left:15%;padding:1px 16px;height:1000px;">
+     <h2 style="font-family: Thonburi Serif;">这是导航栏占满整个页面</h2>
+    <p>
+        这下面可以写一些内容～
+    </p>
+    <p>
+        可以是一些无关紧要的内容 这些内容不会发表到任何的平台 个人 企业 这保证了内容的绝密性
+        <br>
+
+    </p>
+    <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+     <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+</div>
+
+</body>
+</html>

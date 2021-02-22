@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3 用户界面方框大小调整·</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        div.contain{
+            width: 50%;
+           	border:1em solid;
+        }
+        div.text{
+            box-sizing: border-box;
+            display: inline-block;
+            border: 1em red solid;
+            float:left;
+            width: 50%;
+            background-color: #07ff0e;
+        }
+    </style>
+</head>
+<body>
+<div class="contain">
+    <div class="text">
+        这个格子占据了元素的左边50%
+    </div>
+    <div class="text">
+        这个元素占据了元素右边的50%
+    </div>
+</div>
+<p style="display: block;clear:both;"><b>注意 :</b>上面的显样式一个 可以向两边延伸的样式这样的好处是不用改变原来元素的边框大小从而在设计一个行边框 </p>
+</body>
+</html>

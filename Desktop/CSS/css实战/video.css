@@ -1,0 +1,122 @@
+body{
+            margin: 0;
+        }
+        .title{
+            display: block;
+            box-sizing: border-box;
+            padding: 10px;
+            text-align: center;
+            word-spacing: 50px;
+            background-color:#bbbbbb;
+            font-family: "Comic Sans MS";
+            height: 150px;
+        }
+        .title a{
+            position: absolute;
+            top: 0px;
+            right:12px;
+            color: black;
+            font-size: 12px;
+            text-decoration: none;
+        }
+        .title a:hover{
+            color:#029002;
+            border-bottom: black solid 1px;
+        }
+        input[type=search]{
+            width: 10%;
+            padding: 5px;
+            padding-left: 25px;
+            border: none;
+            border-radius: 10px;
+            outline: none;
+            background-image: url("images/搜索图标.jpg");
+            background-repeat: no-repeat;
+            background-position: 1px 2px;
+            font-size: 12px;
+            transition: all 0.5s;
+        }
+        input:focus{
+            background-color: white;
+            width: 15%;
+            transition-duration: 0.5s;
+        }
+        .menu{
+            display: inline-block;
+            width: 100%;
+            height: auto;
+            margin: 0px;
+        }
+        .menu a{
+            padding:20px;
+            text-decoration:none;
+            color: black;
+            float: left;
+            font-size: 12px;
+            border-bottom: black solid 2px;
+            /*border-top:black solid 2px ;*/
+        }
+        .menu a:hover{
+            transition-duration: 0.3s;
+            color: #029002;
+            border-bottom:#029002 solid 2px;
+            /*border-top:#029002 solid 2px ;*/
+            text-decoration: black;
+
+        }
+        .content
+        {
+            margin: 0px;
+            position:absolute;
+            left: 0px;
+            height:100%;
+            width: auto;
+            float:left;
+            background-color: #bbbbbb;
+            text-align: center;
+            display: block;
+            /*flex-wrap: wrap;*/
+            /*align-content: center;*/
+            /*align-items: center;*/
+            /*justify-content: space-around;*/
+        }
+        div.img_frame{
+            width:100px;
+            height:auto;
+            float:left;
+            margin: 15px 14px;
+            overflow: hidden;
+            text-align:center;
+            color: black;
+            transition-duration: 0.5s;
+            border-radius: 0px 0px 5px 5px;
+            /*border:1px solid black;*/
+        }
+        div.img_frame:hover{
+            transition-duration: 0.5s;
+            color:white ;
+            box-shadow: 5px 5px 4px rgba(0,0,0,0.5),0px 5px 4px rgba(0,0,0,0.5);
+            border-radius: 5px;
+        }
+        .img{
+            display: block;
+            width: 100px;
+            height:150px;
+            float: left;
+            position: relative;
+            left: -1px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+
+        }
+        p.img_content{
+            text-align: center;
+            font-size: 2px;
+            width: 100%;
+            margin: 0px;
+            padding: 5px 0px;
+            overflow: scroll;
+        }
+
+
+

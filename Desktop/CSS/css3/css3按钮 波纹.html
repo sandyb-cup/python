@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3 波纹</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .button{
+            position: relative;
+            padding:20px;
+            width: 10%;
+            background-color: #28e1ff;
+            color:black;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            overflow: hidden;
+            left:45%;
+            top:0px;
+        }
+
+        .button:after{
+            /*这个原理是一个创建一个背板的然后显示出来 加背景颜色跟填充是主要的元素控制*/
+            content: '';
+            display: block;
+            position:absolute;
+            /*设置顶部填充*/
+            padding-top:300%;
+            /*设置左边填充*/
+            padding-left:350%;
+            /*设置左边填充-20像素点*/
+            margin-left:-20px!important;
+            margin-top:-120px;
+            opacity: 0;
+            background-color: #a7ff3c;
+            transition: all 0.8s;
+        }
+        .button:active:after{
+            padding:0;
+            margin:0;
+            opacity: 1;
+            transition-duration: 0s;
+        }
+
+
+    </style>
+</head>
+<body>
+<button class="button">
+    Button
+</button>
+</body>
+</html>

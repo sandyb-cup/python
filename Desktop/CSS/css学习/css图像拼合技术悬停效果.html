@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css图像拼合技术悬停效果</title>
+    <style>
+        #imag{
+            position: relative;
+            top:0px;
+            left: 0px;
+        }
+        #imag-left{
+            position: relative;
+            top:0px;
+            left:0px;
+        }
+        #imag-right{
+            position: relative;
+            top:0px;
+            left:0px;
+        }
+        #list-index{
+            background: url("images/GIF图片拼接技术双层.gif")0px 0;
+            height: 45px;
+            width:45px;
+        }
+        #imag:hover #list-index{
+            background:url("images/GIF图片拼接技术双层.gif")0px 45px;
+            height:45px;
+            width: 45px;
+        }
+        #chack_image{
+            background-image: url("images/GIF图片拼接技术双层.gif");
+            width: 135px;
+            height: 90px;
+        }
+        #index-left{
+            background:url("images/GIF图片拼接技术双层.gif")45px 0;
+            height: 45px;
+            width:45px
+        }
+        #imag-left:hover #index-left{
+             background:url("images/GIF图片拼接技术双层.gif")45px 45px;
+            height: 45px;
+            width:45px
+        }
+        #index-right{
+            background:url("images/GIF图片拼接技术双层.gif")88px 0;
+            width: 45px;
+            height: 45px;
+        }
+        #imag-right:hover #index-right{
+
+            background: url("images/GIF图片拼接技术双层.gif")88px 45px;
+            height:45px;
+            width: 45px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="imag">
+        <a href="https://www.baidu.com"><img id="list-index"></a>
+    </div>
+    <div id="imag-left">
+         <a href="https://www.baidu.com"><img id="index-left"></a>
+    </div>
+<!--    <img id="chack_image">-->
+    <div id="imag-right">
+        <a href="https://www.baidu.com"><img id="index-right"></a>
+    </div>
+</body>
+</html>

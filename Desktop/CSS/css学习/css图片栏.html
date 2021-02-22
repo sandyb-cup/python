@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css图片栏</title>
+    <style>
+        body{
+            margin:0px;
+        }
+        /*设置图片变框格式*/
+        div.img{
+            overflow: auto;
+            /*设置每张图片的边距*/
+            margin: 0px;
+            /*设置图片边框*/
+            border: 1px solid #ccc;
+            /*设置图片的格式为浮动*/
+            float: left;
+            overflow: auto;
+            /*设置每张图片的宽度*/
+            width:49%;
+            /*设置图框的高度*/
+            height: 300px;
+            display: inline-block;
+            border-radius:10px;
+        }
+
+        /*设置图片激活时的样式*/
+        div.img:hover{
+            border: 1px solid #555555;
+
+        }
+        /*图片的显示设置*/
+        div.img img{
+            width: 100%;
+            height: auto;
+        }
+        /*添加图片描述*/
+        div.desc{
+            padding:15px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body style="overflow: auto;margin-bottom: 200%">
+<div class="responsive">
+  <div class="img">
+    <a target="_blank" href="http://www.baidu.com">
+      <img loading="lazy" src="images/woerwo.png" alt="图片文本描述">
+    </a>
+    <div class="desc">这里添加图片文本描述</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+    <a target="_blank" href="http://www.baidu.com">
+      <img loading="lazy" src="images/woerwo2.png" alt="图片文本描述">
+    </a>
+    <div class="desc">这里添加图片文本描述</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+    <a target="_blank" href="http://www.baidu.com">
+      <img loading="lazy" src="images/woerwo5.png" alt="图片文本描述">
+    </a>
+    <div class="desc">这里添加图片文本描述</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+    <a href="http://www.baidu.com">
+      <img src="images/woerwo4.png" alt="沃尔沃官方图片">
+    </a>
+    <div class="desc">这里添加图片文本</div>
+  </div>
+</div>
+</body>
+</html>

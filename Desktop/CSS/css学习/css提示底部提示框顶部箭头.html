@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css提示底部提示框顶部箭头</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        /*提示按钮显示控制*/
+        .tooltip{
+            width: 10%;
+            background-color: #a7ff3c;
+            color: black;
+            border-radius: 8px;
+            font-size: 1px;
+            padding: 10px 20px;
+            position: relative;
+            top:40px;
+            display: inline-block;
+            text-align: center;
+
+        }
+        /*提示文本显示格式*/
+        .tooltip .toolcontent{
+            background-color: black;
+            color: white;
+            /*width: 10%;*/
+            position:absolute;
+            /*注意如果按钮的字体没有居中对齐有可能是在显示格式控制上面使用了相对位置*/
+            left: 0px;
+            top:-35px;
+            padding: 4px 2px;
+            font-size: 1px;
+            font-family: "Times New Roman";
+            display: inline-block;
+            visibility: hidden;
+            border-radius: 4px;
+
+        }
+        /*提示触发条件*/
+        .tooltip:hover .toolcontent{
+            visibility: visible;
+        }
+        /*创建提示边框*/
+        .tooltip .toolcontent::before{
+            /*文本内容为空*/
+            content:"";
+            /*位置设置成绝对位置*/
+            position: absolute;
+            /*边框的位置设置成顶部*/
+            top:100%;
+            /*位置设置成中间*/
+            left:50%;
+            /*给边距位置一个值 控制正方形的起始位置*/
+            margin-left: -3px;
+            /*添加边框的宽度 这个添加的是一个正方形它的长宽都是这个值*/
+            border-width: 3px;
+            /*设置变框的类型*/
+            border-style: solid;
+            /*变框颜色*/
+            border-color: black transparent transparent transparent;
+            padding: 3px 0px;
+        }
+    </style>
+</head>
+<body style="text-align: center">
+    <div class="tooltip">这是一个提示按钮
+        <span class="toolcontent">这是提示文本</span>
+    </div>
+</body>
+</html>

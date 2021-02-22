@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3 按钮按压效果</title>
+    <style>
+        body{
+            margin:0;
+        }
+        .button{
+            display:inline-block;
+            padding:20px;
+            width: 10%;
+            position: absolute;
+            left: 45%;
+            background-color: #cff8ff;
+            border: none;
+            border-radius: 10px;
+           box-shadow: 0 12px #999;
+            outline: none;
+        }
+        .button:hover{
+            background-color:#aefdff;
+        }
+        .button:active{
+            background-color: #3e8e41;
+            /*这个阴影的偏移量+下面偏移量的值是上面设置阴影的y轴偏移值 要不然显示效果会发生抖动*/
+              box-shadow: 0 6px #666;
+              transform: translateY(6px);
+        }
+    </style>
+</head>
+<body>
+<button class="button">
+    这是一个按钮
+</button>
+</body>
+</html>

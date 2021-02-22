@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css 水平导航栏激活</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        ul{
+            list-style-type: none;
+            padding: 0px;
+            margin: 0px;
+            width: 100%;
+            background-color: #555555;
+            overflow: hidden;
+        }
+        li a{
+            float: left;
+            display: inline;
+            padding: 12px 20px;
+            text-decoration: none;
+            text-align: center;
+            color:white;
+            background-color: #555555;
+
+        }
+        li a:hover:not(.active){
+            background-color: #000000;
+            color: white;
+        }
+        .active{
+            background-color:#4CAF50;
+            color: black;
+        }
+    </style>
+</head>
+<ul>
+    <li><a class="active" href="#home ">主页</a></li>
+    <li><a href="#news">新闻</a></li>
+    <li><a href="#contact">联系</a></li>
+    <li><a href="#about">关于</a></li>
+</ul>
+<body>
+
+</body>
+</html>

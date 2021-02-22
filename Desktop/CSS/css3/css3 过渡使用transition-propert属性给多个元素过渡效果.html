@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3 给多个属性获取过渡效果</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        div{
+            width: 10%;
+            background-color: #07ff0e;
+            padding: 30px;
+            /*给一个属性*/
+            transition-property:all;
+            /*这里可以是一个all表示所有的元素都获取过渡效果*/
+            /*动画时长*/
+            transition-duration: 2s;
+        }
+        div:hover{
+            padding:50px;
+            width: 15%;
+            background-color: #28e1ff;
+        }
+    </style>
+</head>
+<body>
+<div></div>
+<p>
+    将鼠标放置在上面的框内
+</p>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3元素隐藏</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        div.example{
+            background-color: #07ff0e;
+            color: white;
+            border-radius: 20px;
+            width: 80%;
+            height: auto;
+            text-align: center;
+            padding: 40px;
+        }
+        a{
+            margin: 20px;
+        }
+        @media screen and (max-width: 1000px){
+            div.example{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+<h2>这是元素隐藏案例</h2>
+<div class="example">
+    <span>这个元素重置屏幕他会隐藏</span>
+</div>
+<p>重置屏幕大小查看效果</p>
+</body>
+</html>

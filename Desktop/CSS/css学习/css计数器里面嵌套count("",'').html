@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css计数器里面嵌套</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        ol{
+            counter-reset:conten2;
+            /*记得把list-style-type加上要不然后面显示每一行添加一列都会标号*/
+            list-style-type: none;
+        }
+        li::before{
+            counter-increment: conten2;
+            content: counters(conten2,'.');
+            /*content: 'title'counter(conten1,'.')counter(conten2);*/
+        }
+    </style>
+</head>
+<body>
+<ol>
+    <li>这是表格</li>
+    <li>这是表格</li>
+    <li>这是表格</li>
+    <ol>
+        <li>这是表格</li>
+        <li>这是表格</li>
+        <ol>
+            <li>这是表格</li>
+            <li>这是表格</li>
+            <li>这是表格</li>
+        </ol>
+    </ol>
+    <ol>
+        <li>这是表格</li>
+        <li>这是表格</li>
+    </ol>
+</ol>
+
+<ol>
+    <li>这是表格</li>
+    <li>这是表格</li>
+    <li>这是表格</li>
+</ol>
+</body>
+</html>

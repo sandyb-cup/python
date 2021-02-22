@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css下拉菜单左对齐</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        /*设置下拉的div容器*/
+        .dropdown{
+            display: inline-block;
+            position:relative;
+        }
+        /*设置下拉按钮*/
+        .dropbutn {
+            background-color: #07ff0e;
+            color: black;
+            font-family: "Times New Roman";
+            padding: 12px 20px;
+            font-size: 1px;
+            margin:0px;
+            width:120px ;
+            /*position: absolute;*/
+
+        }
+        /*设置下拉文本*/
+        .dropdown-content{
+            background-color: #dddddd;
+            color: black;
+            display:none;
+            width: 160px;
+            text-align: center;
+            /*注意这个对齐方式要设置width属性更加明显*/
+            /*float:left;*/
+            /*将下拉菜单设置成左对齐*/
+
+        }
+        /*设置下拉标签 a元素*/
+        .dropdown-content a{
+            display: block;
+            color: black;
+            background-color: #dddddd;
+            text-decoration: none;
+            font-size: 1px;
+            /*注意a标签中不能放置weidth元素在里面要不然会导致显示问题字体不在边框之内 这个解释在这里是这样的因为a标签是一个内联标签在block之后他就是一个外联标签属性产生冲突*/
+            text-align: center;
+            vertical-align: center;
+            padding: 12px 12px;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+        .dropdown-content a:hover{
+            /*这个意思就是单dropdown-content 下面的a属性是hove状态下面的是后触发下面的属性*/
+            background-color: black;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="dropdown" style="float: left">
+<!--        设置下拉菜单的布局是左边还是右边 控制div容器的位置就行-->
+        <p class="dropbutn">这是一个下拉按钮</p>
+        <div class="dropdown-content">
+            <a href="#home">主页</a>
+            <a href="#news">新闻</a>
+            <a href="#contact">链接</a>
+            <a href="#about">关于</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3 弹性盒子的align-self</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        /*align-self属于自身的位置元素*/
+        /*flex-start纵轴的起始位置是在左边*/
+        /*flex-end纵轴的起始位置在右边*/
+        /*center元素在纵轴的中间位置 如果该行小于元素的尺寸则会向两边溢出相同长度*/
+        /*strecth*/
+        .flex-container{
+            width: 100%;
+            height: 500px;
+            background-color: #07ff0e;
+            display: flex;
+            margin: auto;
+        }
+        .flex-item{
+            width: 30%;
+            height: 200px;
+            background-color: #28e1ff;
+            text-align: center;
+        }
+        .item1{
+            align-self:flex-start;
+        }
+        .item2{
+            align-self:flex-end;
+        }
+        .item3{
+            align-self: center;
+        }
+        .item4{
+            align-self: baseline;
+        }
+        .item5{
+            align-self: stretch;
+        }
+    </style>
+</head>
+<body>
+<div class="flex-container">
+    <div class="flex-item item1">
+        flex item1
+        <p>align-self:flex-start</p>
+    </div>
+    <div class="flex-item item2">
+        flex item2
+        <p>align-self:flex-end</p>
+    </div>
+    <div class="flex-item item3">
+        flex item3
+        <p>align-self:center</p>
+    </div>
+    <div class="flex-item item4">
+        flax item4
+        <p>align-self:baseline</p>
+    </div>
+    <div class="flex-item item5">
+        flex item5
+        <p>slign-self:stretch</p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css设置链接样式a</title>
+    <style>
+        a{
+            text-decoration: None;
+            /*不显示下划线*/
+        }
+        a:link{
+            color: chartreuse;
+        }
+        a:visited{
+            color: aqua;
+        }
+        a:hover{
+            color: crimson;
+        }
+        a:active{
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+<p><a href="http://www.baidu.com">通向百度</a></p>
+<p><b>注意:</b>hover要在必须要在link visited后面才能看到效果这个必须要严格按照顺序来写</p>
+<p><b>注意:</b>activate一定要在hover后面</p>
+</body>
+</html>

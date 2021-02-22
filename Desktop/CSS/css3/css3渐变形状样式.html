@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3渐变形状样式</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        div{
+            height: 500px;
+            width:100%;
+            background-color: red;
+        }
+        #shape{
+            background-image: radial-gradient(circle,yellow,red,orange);
+        }
+        #shape1{
+            background-image: radial-gradient(ellipse,yellow,red,orange);
+        }
+    </style>
+</head>
+<body>
+<h2>圆形样式渐变</h2>
+    <p>中间样式是椭圆形状</p>
+<div id="shape"></div>
+<h2>椭圆样式渐变</h2>
+    <p>中间的过渡样式是圆形形状</p>
+<div id="shape1"></div>
+</body>
+</html>

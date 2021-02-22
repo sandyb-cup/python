@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*align-items属性参数性质*/
+        /*flex-start 盒子元素的纵轴紧挨纵轴方向依次显示 从上往下进行排布*/
+        /*flex-end 盒子元素的纵轴结尾从尾到前进行依次排列 从下往上进行排布*/
+        /*center 盒子的排列按照中间的顺序依次排列 间隔一样 纵轴的中间位置排布*/
+        /*basesline 它的显示效果与flex-start的显示效果是一样的 排布在纵轴的最上面*/
+        /*stretch延伸如果指定侧轴大小的属性值为'auto'，则其值会使项目的边距盒的尺寸尽可能接近所在行的尺寸，但同时会遵照'min/max-width/height'属性的限制。*/
+        /*前面一个属性是justify-content它是控制子属性的水平方向上面的样式排布*/
+        .flex-container {
+            display: -webkit-flex;
+            display: flex;
+            -webkit-align-items: stretch;
+            align-items: stretch;
+            width: 400px;
+            height: 250px;
+            background-color: lightgrey;
+        }
+        
+        .flex-item {
+            background-color: cornflowerblue;
+            width: 100px;
+            margin: 10px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="flex-container">
+        <div class="flex-item">flex item 1</div>
+        <div class="flex-item">flex item 2</div>
+        <div class="flex-item">flex item 3</div>
+    </div>
+
+</body>
+
+</html>

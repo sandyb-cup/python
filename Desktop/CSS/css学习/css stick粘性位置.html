@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css position_stick</title>
+    <style>
+        p.stick{
+            position: -webkit-sticky;
+            /*sticky属性格式在没有超过边的距离是他的属性类似于relative但是超过边距时他的属性相当于fixed*/
+            /*虽然sticky的属性有时候类似于relative但是他的位置没有relaive的方法也就是设置相对位置的功缺失*/
+            position: sticky;
+            background-color: #07ff0e;
+            left: 0px;
+            top:20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>css Postion_stick</h2>
+     <p class="stick">这是一个粘贴位置属性</p>
+    <div style="padding-bottom:2000px">
+<!--        添加div的style 底部填充2000px-->
+  <p>滚动我</p>
+  <p>来回滚动我</p>
+  <p>滚动我</p>
+  <p>来回滚动我</p>
+  <p>滚动我</p>
+  <p>来回滚动我</p>
+</div>
+
+</body>
+</html>

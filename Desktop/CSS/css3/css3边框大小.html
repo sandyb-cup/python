@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3边框大小</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .box{
+            height:30px;
+            width: 50%;
+            border: black solid 2px;
+            text-align: center;
+            margin-bottom:20px;
+        }
+        .box1{
+            padding: 15px;
+            height:20px;
+            width: 50%;
+            border: black solid 2px;
+            text-align: center;
+            margin-bottom:15px;
+            overflow: scroll;
+        }
+        .box2{
+            height: 50px;
+            width: 50%;
+            box-sizing: border-box;
+            border: black solid 2px;
+            margin-bottom: 20px;
+        }
+        .box3{
+            margin-bottom: 15px;
+            height: 50px;
+            width: 50%;
+            box-sizing: border-box;
+            padding:20px;
+            border: black solid 2px;
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    height:50px; width:50%
+</div>
+<div class="box1">
+    height:15px;widht:50% padding:15px
+    使用width跟height定义的边框它里面只是包含了内容部分而padding部分没用进行包含
+</div>
+<div class="box2">
+    height:30px width:50% box-seize:border-box;
+</div>
+<div class="box3">
+      height:30px width:50% box-seize:border-box;padding:15px
+    使用border-box属性边框的width 跟height padding都包含在边框范围
+</div>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css列表项标记项的显示</title>
+    <style>
+        ul{
+            /*list-style-image: url("images/dog_label.png")*/
+            list-style-type: None;
+            padding: 0px;
+            margin: 0px;
+        }
+        ul li{
+            line-height: 180px;
+            /*控制行高*/
+            background-image: url("images/dog_label.png");
+            /*导入图片*/
+            background-repeat: no-repeat;
+            /*图片是否重叠*/
+            background-position: 0px,120px;
+            /*图片位置 第一个px是设置左右移动的 第二个是设置上下移动的*/
+            padding-left: 180px;
+            /*这个参数是控制字体的位置填充左边填充180px*/
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Coca Cola</li>
+</ul>
+</body>
+</html>

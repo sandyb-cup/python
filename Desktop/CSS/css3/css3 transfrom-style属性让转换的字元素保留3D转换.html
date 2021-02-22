@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css让字元素保留3D属性</title>
+    <style>
+        body{
+
+        }
+        #div1{
+            height: 300px;
+            width: 20%;
+            border: 2px black solid;
+        }
+        #div2{
+            background-color: #a7ff3c;
+            width: 50%;
+            height: 100px;
+            transform-style: preserve-3d;
+            /*让字元素保留3D特性*/
+            transform: rotateX(0deg);
+        }
+        #div3{
+            background-color: red;
+            height: 100px;
+            padding:30px;
+            transform: rotateY(30deg);
+        }
+    </style>
+</head>
+<body>
+<div id="div1">
+    <div id="div2">
+        <div id="div3">
+        </div>
+    </div>
+</div>
+<p><b>注意:</b>对之前的底色不进行覆盖</p>
+</body>
+</html>

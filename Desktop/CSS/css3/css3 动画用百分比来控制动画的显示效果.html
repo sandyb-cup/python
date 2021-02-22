@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3 动画通过百分比修改动画的显示效果</title>
+    <style>
+        body{
+            magin:0
+        }
+        div{
+            padding: 100px 0;
+            background-color: #28e1ff;
+            width: 20%;
+            position: absolute;
+            top:200px;
+            left: 40%;
+            border-radius: 10px;
+            text-align: center;
+        }
+        div:hover{
+             animation: change_color 5s;
+        }
+        @keyframes change_color {
+            0%{background-color: #28e1ff}
+            20%{background-color: #07ff0e}
+            40%{background-color: #a7ff3c}
+            60%{background-color: #b7ffe2}
+            80%{background-color: #ffb217}
+            100%{background-color: red}
+        }
+    </style>
+</head>
+<body>
+<div>
+    鼠标放置在这上面动画效果显示
+</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3面包屑导航</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        ul.breadcrumb{
+            display: inline-block;
+            padding: 10px;
+            background-color: #bbbbbb;
+            width: 100%;
+            position: relative;
+            top:0px;
+            margin: 0px;
+        }
+        ul.breadcrumb li{
+            display: inline;
+        }
+        ul.breadcrumb li a{
+            color: #07ff0e;
+            text-decoration: none;
+        }
+        ul.breadcrumb li+li:before{
+
+            padding: 10px 20px;
+            color: black;
+            content: "/\00a0";
+            /*\00a0空格键*/
+        }
+    </style>
+</head>
+<body>
+<ul class="breadcrumb">
+    <li><a href="#">前端</a></li>
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href="#">JavaScript</a></li>
+    <li><a style="color: #a7ff3c" href="#">后端...</a></li>
+</ul>
+</body>
+</html>

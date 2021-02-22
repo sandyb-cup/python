@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3圆角</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        div{
+            display: block;
+            background-color: #a7ff3c;
+            width: 20%;
+            text-align: center;
+            padding: 20px 20px;
+        }
+        #round1{
+            border-radius: 10px;
+        }
+        #round2{
+            border-radius: 10px 30px 20px;
+        }
+        #round3{
+            border-radius: 10px 30px;
+        }
+        #round4{
+            border-top-left-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="round1">
+        这是一个值的圆角属性显示样式
+    </div>
+    <div id="round2">
+        这是三个值的圆角显示样式 三个值表示的左上角的圆角 右上角圆角左下角圆角 右下角圆角
+    </div>
+    <div id="round3">
+        这个是两个值的圆角显示样式 第一个值控制左上角右下角 第二个值控制右上角跟左下角
+    </div>
+    <div id="round4">
+        圆角控制也可以是单独控制的
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css表单按钮样式</title>
+    <style>
+        body{
+            text-align: center;
+            margin: 0px;
+            margin-bottom: 100%;
+        }
+        div.button_location{
+            position: fixed;
+            bottom: 0px;
+            width: 100%;
+        }
+        input[type=button],input[type=submit],input[type=reset]{
+            width: 30%;
+            height:30px;
+            background-color: #f1f1f1;
+            color:black;
+            border-radius: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="button_location">
+    <form action="">
+        <input type="button" value="按钮">
+        <input type="submit" value="提交">
+        <input type="reset" value="重置">
+    </form>
+</div>
+</body>
+</html>

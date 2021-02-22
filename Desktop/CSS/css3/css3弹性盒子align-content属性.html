@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3 align-content属性</title>
+    <style>
+        /*align-content 它是修改flex-warp的行为 类似于align-item，但是他不是设置元素子元素的对齐而是设置各行的对齐*/
+        body{
+            margin: 0;
+        }
+        /*align-content参数*/
+        /*stretch 默认参数各行会延展占用剩余空间*/
+        /*flex-start 各行会在起始位置叠堆*/
+        /*flex-end* 各行会在末尾位置开始叠堆/
+        /*center 各行在中间位置叠堆*/
+        /*space-between 各行均匀分布*/
+        /*space-around首尾是元素之间间隙的一半*/
+        .flex-container{
+            height: 600px;
+            width: 50%;
+            background-color: #28e1ff;
+            border-radius: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            overflow: hidden;
+        }
+        .flex-item{
+            height: 150px;
+            width: 200px;
+            background-color: #07ff0e;
+            border-radius: 20px;
+            text-align: center;
+            margin:10px;
+        }
+    </style>
+</head>
+<body>
+<div class="flex-container">
+    <div class="flex-item">flex item1</div>
+    <div class="flex-item">flex item2</div>
+    <div class="flex-item">flex item3</div>
+    <div class="flex-item">flex item4</div>
+</div>
+</body>
+</html>

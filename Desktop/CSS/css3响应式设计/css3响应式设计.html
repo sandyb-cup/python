@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>css3响应式设计viweport</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .view{
+            height: 600px;
+            width: 50%;
+            background-color: gold;
+            opacity: 0.6;
+            margin: auto;
+            padding:60px;
+        }
+    </style>
+</head>
+<body>
+<div class="view">
+    <h1>响应式设计概念</h1>
+    <p>
+        响应式设计是用户界面的可视区域
+        通常手机界面优化过的界面是viewport mate标签如下
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </p>
+    <h3>
+        参数解释
+    </h3>
+    <p>
+        height：指定view-port高度可以指定一个值比如说是600 或者说是特殊的值，如device-width为设备的宽度(单位为css缩放100%时的像素)
+    </p>
+    <p>
+         width：这个值与height相对应
+    </p>
+    <p>
+        initial-scale初始时的缩放比例也就是第一次页面load时的缩放比例
+    </p>
+    <p>
+        maximum-scale允许用户最大的缩放比例
+    </p>
+    <p>
+        minimum-scale允许用户最小的缩放比例
+    </p>
+    <p>
+         user-scalable是否允许用户进行缩放
+    </p>
+</div>
+</body>
+</html>

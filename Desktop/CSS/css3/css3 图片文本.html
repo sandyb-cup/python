@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3 图片文本</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        #div{
+            position: relative;
+            width:30%;
+            padding:15px;
+            border-radius:20px;
+            box-shadow:2px 3px 5px rgba(0,0,0,0.5);
+        }
+        .text{
+            position: absolute;
+            left: 50%;
+            bottom: 50%;
+        }
+        #contain{
+            display: block;
+            position:relative;
+            font-size: 5px;
+            padding:15px 0;
+            text-align: center;
+            width: 100%;
+            background-color: white;
+
+        }
+        #div::after{
+            content: '';
+            position: absolute;
+            /*阴影显示在图片下面如果设置成显示在屏幕上面下面的参数设置成1*/
+            z-index: -1; /* hide shadow behind image */
+            box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+            /*设置阴影的宽度*/
+            width: 60%;
+            /*设置阴影的起始位置*/
+            left: 20%; /* one half of the remaining 30% */
+            /*设置阴影的宽度*/
+            height: 2px;
+            /*设置阴影的显示位置*/
+            bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+<div id="div">
+    <img src="images/woerwo.png" alt="woerwo" width=100% height=auto>
+    <div id="contain">
+        这是描述文本
+    </div>
+</div>
+</body>
+</html>

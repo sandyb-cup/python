@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css网页布局之一</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .headers{
+            padding: 20px;
+            background-color: #f1f1f1;
+            color: black;
+            text-align: center;
+        }
+        .nav{
+            border-radius: 5px;
+            display:block;
+            background-color:black;
+        }
+        .nav a{
+            margin: 0px;
+            display: inline-block;
+            padding: 10px;
+            text-decoration: none;
+            font-size: 2px;
+            color: white;
+        }
+        .nav a:hover{
+            background-color: #f1f1f1;
+            color: black;
+        }
+        .column{
+            float: left;
+            width: 33.3%;
+        }
+        .row:after{
+            content: none;
+            display:table;
+            clear:both;
+            /*clear只会影响自身不会影响其他元素;*/
+            /*float属性他会影响其他元素*/
+            /*两边去除浮动 根据上面的控制可以得知row元素他是一个独立的元素独占一行旁边不会出现其他的float元素*/
+        }
+    </style>
+
+</head>
+<body>
+<div class="headers">
+    这是标题
+</div>
+<div class="nav">
+    <a href="">链接</a>
+    <a href="">链接</a>
+    <a href="">链接</a>
+</div>
+<div class="row">
+    <div class="column">
+        <h3>第一列</h3>
+        <p>这是第一列文字 这里可以下写一些文字比如你好世界 你好地球 你好宇宙之类的</p>
+    </div>
+    <div class="column">
+        <h3>第二列</h3>
+        <p>这是第一列文字 这里可以写一些文字比如你好世界 你好地球 你好宇宙之类的</p>
+    </div>
+    <div class="column">
+        <h3>第三列</h3>
+        <p>这是一段文字 这里可以写一些文字比如你好世界 你好地球 你好宇宙之类的</p>
+    </div>
+</div>
+</body>
+</html>

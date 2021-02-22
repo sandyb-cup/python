@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css display改变元素显示</title>
+    <style>
+        span{
+            display: block;
+            /*将一个内联元素变成一个外联元素 内联元素他只会占用宽度 外联占用了全部宽度前后都是换行符*/
+        }
+        p{
+            display: inline;
+            /*将一个外联元素转换成内联元素*/
+        }
+    </style>
+</head>
+<body>
+    <span>span本来是一个内联元素只会显示在一行</span>
+    <span>但是他现在是通过display改变了他的性质他现在是一个外联元素</span>
+
+    <p>
+        p段落本来是一个外联元素但是通过display他变成了一个内联元素
+    </p>
+    <p>
+        他现在会显示在一行里面。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。
+    </p>
+</body>
+</html>

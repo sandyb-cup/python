@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3 弹性盒子指定盒子子元素换行</title>
+    <style>
+        body{
+            margin:0;
+        }
+        /*flex-wrap属性作用指定弹性盒子子元素的换行方式 */
+        /*nowrap默认参数指定盒子子元素只有一行 如果超过可能会溢出容器 实在不够位置也是挤在一起*/
+        /*wrap多行显示如果子元素超过容器元素自动换行 如果一行不够位置可能会出现纵向排列显示多行*/
+        /*wrap-reverse反转元素排列 从下往上进行排列*/
+        /*类似于align-item flex-end属性一样*/
+
+        .flex-container{
+            height: 400px;
+            width: 50%;
+            background-color: #07ff0e;
+            border-radius: 20px;
+            display: flex;
+            flex-wrap:wrap-reverse;
+        }
+        .flex-item{
+            height: 200px;
+            width: 20%;
+            background-color: red;
+            border-radius:10px;
+            margin: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="flex-container">
+    <div class="flex-item">flex item1</div>
+    <div class="flex-item">flex item2</div>
+    <div class="flex-item">flex item3</div>
+</div>
+</body>
+</html>

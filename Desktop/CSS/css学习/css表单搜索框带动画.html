@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css表单搜索框带动画</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        input[type=search_box]{
+            background: url("images/菜鸟教程搜索图形.gif");
+            background-position: 0px 10px;
+            width: 20%;
+            height: 20px;
+            padding: 10px 20px 10px 25px;
+            background-repeat: no-repeat;
+            -webkit-transition: width 0.4s ease-in-out;
+            /*使用transition属性使宽度0.4秒时间延展出去*/
+            transition: width 0.4s ease-in-out;
+            border-radius: 4px;
+        }
+        input[type=search_box]:focus{
+            width:100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <input type="search_box" value='搜索..'>
+</div>
+
+</body>
+</html>

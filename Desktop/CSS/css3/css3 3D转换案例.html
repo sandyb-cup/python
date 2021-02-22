@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3 3D转换案例</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        div{
+            height: 50px;
+            width: 20%;
+            background-color: red;
+            margin:20px 0;
+        }
+        div#div{
+            transform: rotateX(180deg);
+        }
+        div#transfrom_Y{
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+<div>
+    这是没有使用transform属性的容器显示的效果
+</div>
+<div id="div">
+    这是使用了transform:rotateX属性容器的效果显示
+</div>
+<div id="transfrom_Y">
+    这是使用了transorm:rotateY属性的显示效果
+</div>
+<p><b>注意:</b>rotate变换的只是字体的方向倒置容器的位置没有发生变化</p>
+
+</body>
+</html>

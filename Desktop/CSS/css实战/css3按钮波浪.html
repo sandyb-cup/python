@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3按钮波浪</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .button{
+            width: 10%;
+            padding:20px 0;
+            background-color: #07ff0e;
+            color: white;
+            border-radius: 10px;
+            position:relative;
+            left:45%;
+            top:200px;
+            overflow: hidden;
+            border:none;
+            outline: none;
+        }
+        .button:after{
+            content:'';
+            position: absolute;
+            display:block;
+           /*设置顶部填充*/
+           padding-top:100%;
+            /*设置左边填充*/
+            padding-left: 200%;
+            /*设置左边填充-20像素点 !important提高属性权限优先生效*/
+            margin-top: -30px;
+            margin-left: -60px;!important;
+            background-color: #28e1ff;
+            opacity: 0;
+            text-align: center;
+            transition: all 0.8s;
+        }
+        /*按钮点击之后button:after发生的变化效果显示*/
+        .button:active:after{
+            opacity: 1;
+            transition-duration: 0s;
+             padding:0;
+            margin:0;
+        }
+    </style>
+</head>
+<body>
+<button class="button">
+    Button
+</button>
+</body>
+</html>

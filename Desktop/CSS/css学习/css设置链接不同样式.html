@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css设置链接不同样式</title>
+    <style>
+        a.one{text-decoration: None}
+        a.one:link{color: blue;}
+        a.one:visited{color: cadetblue;}
+        a.one:hover{color: coral;}
+        a.two{text-decoration: None;}
+        a.two:link{color: blue;}
+        a.two:visited{color: cadetblue;}
+        a.two:hover{font-size: 20px}
+        a.three:link{color: blue;text-decoration: None}
+        a.three:visited{color: cadetblue; text-decoration: None}
+        a.three:hover{text-decoration: underline}
+        a.four{text-decoration: None}
+        a.four:link{color: blue;}
+        a.four:visited{color: cadetblue;}
+        a.four:hover{font-style: italic}
+    </style>
+</head>
+<body>
+<p><a class="one" href="http://www.baidu.com" target="_blank">字体颜色发生变化</a></p>
+<p><a class="two" href="http://www.baidu.com">字体大小发生变化</a></p>
+<p><a class="three" href="http://www.baidu.com">字体修饰发生变化</a></p>
+<p><a class="four" href="http://www.baidu.com">字体类型发生变化</a></p>
+</body>
+</html>

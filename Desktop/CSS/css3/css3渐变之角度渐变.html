@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3渐变之角度渐变</title>
+    <style>
+        body{
+            margin:0px;
+            text-align: center;
+        }
+        div{
+            height: 300px;
+            text-align: center;
+            margin: 20px;
+        }
+        #gradient1{
+            background-image: linear-gradient(0deg,red,yellow);
+        }
+        #gradient2{
+            background-image: linear-gradient(180deg,red,yellow);
+        }
+        #gradient3{
+            background-image: linear-gradient(90deg,red,yellow);
+        }
+        #gradient4{
+            background-image: linear-gradient(360deg,red,yellow);
+        }
+    </style>
+</head>
+<body>
+<div id="gradient1">
+    0deg 从上到下渐变 红色在下黄色在上
+</div>
+<div id="gradient2">
+    90deg 从上到下渐变 红色在上黄色在下
+</div>
+<div id="gradient3">
+    180deg 从左往右渐变 左边是红色右边是黄色
+</div>
+<div id="gradient4">
+    360deg 从右往左渐变 左边是黄色右边是红色
+</div>
+
+<h3>
+    方位图
+</h3>
+<img src="images/颜色渐变方位图.jpg" alt='方位图'>
+</body>
+</html>

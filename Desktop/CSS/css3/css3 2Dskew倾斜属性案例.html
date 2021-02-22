@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3倾斜属性案例</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        div{
+            width: 20%;
+            height: 50px;
+            background-color: #a7ff3c;
+            border-radius:10px ;
+        }
+        div#div{
+            margin:100px 0;
+            transform: skew(30deg, 20deg);
+            /*-ms-transform: skew(30deg,30deg);*/
+            /*-webkit-transform: skew(30deg,30deg);*/
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+<div>
+    这是没有使用skew属性的显示样式
+</div>
+<div id="div">
+    这是使用了skew属性的显示样式 transfrom:skew第一个参数是控制y轴上面的角度控制 第二个参数是控制x轴上面的角度
+</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css为元素before</title>
+    <style>
+        h1.before:before{
+            content: url("images/dongman1.png");
+            /*在h1之前插入一张图片*/
+        }
+        h1.after:after{
+            content: url("images/dongman2.png");
+            /*在h1之后插入一张图片*/
+        }
+        h1{
+            font-size:xx-small;
+        }
+    </style>
+</head>
+<body>
+     <h1 class="before">在h1之前插入一张图片</h1>
+    <h1 class="after">在h1之后插入一张图片</h1>
+
+</body>
+</html>

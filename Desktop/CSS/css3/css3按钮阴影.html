@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3 按钮阴影</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .button{
+            width: 10%;
+            padding:10px;
+            border-radius:5px;
+            text-align: center;
+            transition-duration: 0.4s;
+            background-color: #555555;
+            color:white;
+        }
+        .button1{
+            box-shadow: 6px 6px 3px 0 rgba(0,0,0,0.2),0 8px 8px 0 rgba(0,0,0,0.5);
+        }
+        .button2:hover{
+              box-shadow: 6px 6px 3px 0 rgba(0,0,0,0.2),0 8px 8px 0 rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+<button class="button button1">
+    这是一个按钮
+</button>
+<button class="button button2">
+    这是一个按钮
+</button>
+</body>
+</html>

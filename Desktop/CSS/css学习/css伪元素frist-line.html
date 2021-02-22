@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css伪元素 它是用来添加一些选择器的特殊效果</title>
+    <style>
+        p:first-line{
+            color: #07ff0e;
+            font-variant:small-caps;
+        }
+    </style>
+</head>
+<body>
+    <p>first-line的作用就是对首行文本进行特殊显示效果</p>
+    <div>
+        <p>这是first-line影响不到的一行因为这一行不是p文本的首行所以他的文本不会受到影响
+            <br>
+            这是first-line影响不到的一行
+        </p>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css表格文字对齐</title>
+    <style>
+        table{
+            width: 100%;
+
+        }
+        table,th,td{
+            border: solid black;
+            border-collapse: collapse;
+            height: 60px;
+            /*为了显示水平对齐效果这里设置表格高度为60像素*/
+        }
+        td{
+            text-align: center;
+            /*文字向右对齐*/
+            /*!*水平对齐属性使文字进行底部对齐或者是顶部对齐 中间对齐*!*/
+
+            vertical-align: center;
+            /*这个参数是能和上面的text-align一起使用的*/
+        }
+
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Fristname</th>
+        <th>Lastname</th>
+        <th>savings</th>
+    </tr>
+    <tr>
+        <td>Peter</td>
+        <td>Coca Cola</td>
+        <td>$19</td>
+    </tr>
+    <tr>
+        <td>Lois</td>
+        <td>Griffin</td>
+        <td>$150</td>
+    </tr>
+</table>
+<p><b>注意:</b>这里是使文字向右对齐</p>
+</body>
+</html>

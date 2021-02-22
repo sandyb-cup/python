@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css 用滚动条显示内容溢出</title>
+    <style>
+        div{
+            width: 120px;
+            height: 110px;
+        }
+        div.hidden{
+            overflow: hidden;
+            background-color: #28e1ff;
+        }
+        div.scroll{
+            background-color: #28e1ff;
+            overflow: scroll;
+        }
+        div.auto{
+            background-color: #28e1ff;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <h6>overflow:hidden</h6>
+    <div class="hidden">overflow设置成hidden，overflow设置成hidden，overflow设置成hidden overflow设置成overflow</div>
+    <h6>overflow:scroll</h6>
+    <div class="scroll">overflow设置成scroll overflow设置成scroll overflow设置成scroll，overflow设置成scroll</div>
+    <h6>overflow:auto</h6>
+    <div class="auto">overflow设置成auto overflow设置成auto overflow设置成auto overflow设置成auto</div>
+</body>
+</html>

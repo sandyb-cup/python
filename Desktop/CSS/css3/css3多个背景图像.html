@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3多个背景图片</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        #example{
+            background-image:url("images/多个背景图片花.gif") ,url("images/背景图片墙纸.gif");
+            /*设置每个图片的位置 花的图片在有下角 墙纸的图片在左上角*/
+            background-position: right bottom, left top;
+            /*设置每个图片的替代属性 用逗号分开*/
+            background-repeat: no-repeat,repeat;
+            /*设置容器填充如果不填充效果不明显*/
+            padding:15px;
+        }
+    </style>
+</head>
+<body>
+<div id="example">
+        <h1>Lorem Ipsum Dolor</h1>
+<!--        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>-->
+<!--        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>-->
+</div>
+</body>
+</html>

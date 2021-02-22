@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css图片响应式</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        div.img{
+            margin-right: 0px;
+            float: left;
+            width: 50%;
+            border-radius:10px ;
+            overflow: auto;
+            /*在这里要注意这里图片的显示类型要选择overflow图片才会显示成圆角*/
+        }
+        div.img img{
+            width: 100%;
+            height:auto;
+        }
+        div.desc{
+            text-align: center;
+            padding: 5px;
+        }
+        div.img:hover{
+           border: 0px black solid ;
+        }
+        .responsive{
+            width: 100%;
+            /*float: left;*/
+            /*display: inline-block;*/
+        }
+        /*通过屏幕大小调整图片的显示设置*/
+        /*max-width指的是网页屏幕大小*/
+        @media only screen and (max-width: 1000px){
+            .responsive{
+                width: 100%;
+                /*将图片的显示模式设置成浮动(图片不够位置是图片自己调整位置)*/
+                float: left;
+            }
+            div.img{
+                width: 100%;
+            }
+        }
+        /*通过屏幕大小调整图片的显示*/
+        @media only screen and (max-width: 1480px) {
+            .responsive{
+                widht:100%
+            }
+        }
+        .clearfix:after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+<div class="responsive">
+    <div class="img">
+        <a href="http://www.baidu.com">
+            <img src="images/woerwo.png" alt="沃尔沃官方图片">
+        </a>
+        <div class="desc">这里添加文本描述</div>
+    </div>
+</div>
+<div class="responsive">
+    <div class="img">
+        <a href="http://www.baidu.com">
+            <img src="images/woerwo2.png" alt="沃尔沃官方图片">
+        </a>
+        <div class="desc">这是描述文本</div>
+    </div>
+</div>
+<div class="clearfix"></div>
+</body>
+</html>

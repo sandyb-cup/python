@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css提示箭头在左右两端显示</title>
+    <style>
+        body{
+            text-align: center;
+            margin:0px;
+
+        }
+        .tooltip{
+            width: 10%;
+            background-color: #a7ff3c;
+            color: black;
+            font-size: 1px;
+            position: relative;
+            top:50px;
+            left: 45%;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .tooltip .toolcontent{
+            background-color: black;
+            color: white;
+            position: absolute;
+            border-radius: 4px;
+            padding: 2px 6px;
+            top:25%;
+            left: -57%;
+            visibility: hidden;
+            text-align: center;
+
+        }
+        .tooltip:hover .toolcontent{
+            visibility: visible;
+        }
+        .tooltip .toolcontent::before{
+            content: "";
+            border-width: 4px;
+            border-style: solid;
+            border-color: transparent transparent transparent black;
+            position: absolute;
+            top:25%;
+            left: 100%;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <p class="tooltip">
+        这是提示按钮
+        <span class="toolcontent">这是提示文本</span>
+    </p>
+</body>
+</html>

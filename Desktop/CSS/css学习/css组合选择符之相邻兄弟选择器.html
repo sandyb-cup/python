@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css相邻兄弟选择器</title>
+    <style>
+        div+p{
+            color: gold;
+            font-size: 2px;
+        }
+    </style>
+</head>
+<body>
+    <p>段落一不在div中</p>
+    <div>
+        <p>段落二在div中</p>
+        <span><p>段落三在div中</p></span>
+    </div>
+<!--    相邻兄弟选择器只会选择父级标签之后的第一个标签-->
+    <p>段落四不在div中</p>
+    <p>段落五不在div中</p>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        /*justify-content属性设置*/
+        /*flex-style 参数属性元素justify-content默认属性元素的排布方向从左往右进行依次排列*/
+        /*flex-end 参数元素行位进行紧密填充*/
+        /*center 元素在中间进行排列*/
+        /*space-between 进行均匀排布*/
+        /*space-around 首行的元素是整个元素的一半 尾部到结尾的距离也是整个空间长度的一半*/
+        
+        .flex-container {
+            display: flex;
+            width: 100%;
+            height: auto;
+            background-color: black;
+            justify-content: space-around;
+        }
+        
+        .flex-text {
+            background-color: white;
+            width: 20%;
+            height: 20px;
+            text-align: center;
+            padding: 10px;
+            border: 2px black solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="flex-text">
+            flex item1
+        </div>
+        <div class="flex-text">
+            flex item2
+        </div>
+        <div class="flex-text">
+            flex item3
+        </div>
+        <div class="flex-text">
+            flex item4
+        </div>
+    </div>
+</body>
+
+</html>

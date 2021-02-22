@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css图像拼合技术</title>
+    <style>
+        body{
+            margin:0px;
+        }
+        img.home{
+            width: 45px;
+            height:44px;
+            background:url("images/GIF图片拼合技术.gif") 0 0;
+            display: block;
+            margin: 0px;
+        }
+        img.next{
+            /*这个是显示图片的宽度类似于切片*/
+            width:45px;
+            height:44px;
+            background:url("images/GIF图片拼合技术.gif") 45px 0;
+        }
+        img.back{
+            width:45px;
+            height: 44px;
+            /*前面的参数属性调整图片显示的左右位置*/
+            /*后面同理但是调整的是图片的上下位置*/
+            background:url("images/GIF图片拼合技术.gif") 90px 0;
+        }
+        #img{
+            display: block;
+            position:absolute;
+            top:120px;
+            left: 0px;
+        }
+    </style>
+</head>
+    <img class='home'><a href="http://www.baidu.com"></a> <br>
+    <div id="img">
+<!--    注意在放置链接图片的时候要把图片的链接放在a标签之中-->
+         <a href="https://www.runoob.com/css/css-image-sprites.html"><img class="next"></a><br>
+    </div>
+    <img class="back"><a href="https://www.runoob.com/try/try.php?filename=trycss_sprites_nav"></a>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css提示工具显示在右边</title>
+    <style>
+        /*body{*/
+        /*    margin:0px;*/
+        /*}*/
+        tooltip{
+            text-align: center;
+            display:inline-block;
+            width:12px;
+            padding:2px 8px;
+        }
+        .tooltip .tooltiptext{
+            display: inline;
+            /*注意在显示栏的设置中不能加上width选项要不然显示边框不能控制其宽度*/
+            /*#在显示变框加上圆角*/
+            border-radius: 4px;
+            padding: 4px 2px;
+            background-color: #07ff0e;
+            color: black;
+            visibility: hidden;
+            position:absolute;
+            /*相对位置是相对与正常显示的位置来讲*/
+            /*绝对位置是针对网页位置来讲的*/
+            top:3px;
+            /*这个位置要自己一点一点调试没有捷径*/
+            left: 59%;
+        }
+        .tooltip:hover .tooltiptext{
+            visibility:visible;
+        }
+    </style>
+</head>
+<body style="text-align: center">
+<!--#将网页文本设置成居中格式-->
+    <div class="tooltip">
+        将鼠标放置在上面会有提示
+        <span class="tooltiptext">Hello world</span>
+    </div>
+</body>
+</html>

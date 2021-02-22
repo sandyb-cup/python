@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css媒体类型</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        /*屏幕显示字体设置*/
+        @media screen{
+            /*这里在复习一下sans-serif是等宽字体显示 serif是尾部带修饰的字体显示*/
+            p.text{
+                font-family: Helvetica,sans-serif;
+                font-size:14px;
+            }
+        }
+        /*打印字体设置*/
+        @media print{
+            p.text{
+                font-family:Times,Serif;
+                font-size: 20px;
+            }
+        }
+        /*#屏幕显示字体跟打印字体设置成粗体*/
+        @media screen,print {
+            p.text{
+                font-weight:bold;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p class="text">
+        <span>这是字体显示测试</span>
+    </p>
+</body>
+</html>

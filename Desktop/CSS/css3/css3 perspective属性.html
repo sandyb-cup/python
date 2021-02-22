@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3 perspective属性案例</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        #div{
+            position: relative;
+            top:100px;
+            left: 25%;
+            height: 400px;
+            width: 50%;
+            border:1px black solid;
+            padding: 30px;
+            perspective:100px;
+            text-align: center;
+        }
+        #div1{
+           padding:100px;
+            /*这个是X轴旋转10度的 效果可以自己试的去*/
+            transform: rotateX(10deg);
+
+            background-color: #07ff0e;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div id="div">
+    <div id="div1">
+        Hello world
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>trainsfrom-origial属性设置 设置元素的基点位置</title>
+    <style>
+        body{
+            margin: 0;
+
+        }
+        div#div1{
+
+            height: 200px;
+            width: 20%;
+            position:relative;
+            top:200px;
+            left:40%;
+            border:2px black solid;
+            margin:30px;
+        }
+        div#div{
+            position:absolute;
+            transform:rotate(70deg);
+            /*定义旋转的基点*/
+            /*这个选转基点是图形的旋转点这个不好控制*/
+            transform-origin:0px 0px;
+            background-color: red;
+            padding: 15px;
+            border: 1px black solid;
+        }
+    </style>
+</head>
+<body>
+<div id="div1">
+    <div id="div">
+        rotate:120deg
+    </div>
+</div>
+</body>
+</html>

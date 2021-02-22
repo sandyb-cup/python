@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css padding填充</title>
+    <style>
+        p{
+            font-family: 'Trebuchet',serif;
+            font-size: 2px;
+        }
+        p.padding_top{
+            padding-top: 20px;
+        }
+        p.padding_left {
+            padding-left: 20px;
+            white-space: nowrap;
+        }
+        p.padding_bottom{
+            padding-bottom: 20px;
+            /*white-space: nowrap;*/
+        }
+        p.padding_right{
+            padding-right: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <p>
+        这是没用使用边距的段落
+    </p>
+    <p class="padding_top">这是使用了上边距的padding</p>
+    <p class="padding_left">这是使用了左边距的padding
+        文字禁止换行
+    </p>
+
+    <p class="padding_right">这是使用了右边距的padding
+        文字禁止换行
+    </p>
+    <p class="padding_bottom">这是使用了底部填充的段落</p>
+    <p>
+        这是没用使用填充的段落
+    </p>
+</body>
+</html>

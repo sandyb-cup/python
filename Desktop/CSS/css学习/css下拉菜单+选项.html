@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css下拉菜单夹选项</title>
+    <style>
+        /*设置下拉菜单的按钮样式*/
+        .dropbtn{
+            background-color: #07ff0e;
+            color: black;
+            padding: 12px 28px;
+            cursor: pointer;
+            font-size: 2px;
+            height: 12px;
+            width: 24px;
+            font-family: "Times New Roman";
+            display: block;
+
+        }
+        .dropdown{
+            display: inline-block;
+            position: absolute;
+        }
+        .dropdown-content a{
+            background-color: #dddddd;
+            font-size: 2px;
+            color: black;
+            text-decoration: none;
+            text-align: center;
+            padding: 12px 6px;
+            display: block;
+        }
+        .dropdown-content{
+            width: 100%;
+            background-color: #a7ff3c;
+            color: #555555;
+            text-align: center;
+            font-family: sans-serif Serif;
+            font-size: 1px;
+            box-shadow: 0px 3px 2px 2px rgba(0,0,0,0.2);
+            position:relative;
+            display:none;
+            /*隐藏显示这是关键*/
+            z-index: auto;
+            /*padding:12px 6px*/
+        }
+        .dropdown:hover .dropdown-content{
+            /*如果dropdown属性触发hover属性 dropdwn-content类改变disply参数*/
+            display: block;
+        }
+        .dropdown:hover .dropbtn{
+            background-color: #52ff19;
+        }
+        .dropdown a:hover{
+            background-color:black;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <span class="dropbtn">导航</span>
+        <div class="dropdown-content">
+            <a href="#home">主页</a>
+            <a href="#news">新闻</a>
+            <a href="#contact">联系</a>
+            <a href="#about">关于</a>
+        </div>
+    </div>
+</body>
+</html>

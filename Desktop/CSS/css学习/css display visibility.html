@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css display visibility属性显示</title>
+    <style>
+        /*隐藏元素 display:none 或者是visibility：hidden*/
+        h1{
+            font-family: 'Thonburi',serif;
+            font-size: 1px;
+        }
+        h1.hidden{
+            display: none;
+        }
+        h1.visibility{
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <h1>这回正常显示</h1>
+     <h1>
+         下面是用了display:none display：他不显示也不会占用页面空间
+     </h1>
+    <h1 class="hidden">这段话不会显示在网页上面</h1>
+    <h1>这段话会正常显示在网页上面</h1>
+    <h1 class="visibility">这段话不会显示在页面上</h1>
+    <h1>这段话会显示在页面上 可以看到visibility他不显示在网页上但是他还是会占用网页的空间</h1>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css背景图片background-origial属性设置</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        div{
+            width:30%;
+            background:url("images/表情包.jpg");
+            background-origin: content-box;
+            background-repeat: no-repeat;
+            /*添加这个属性与其他background-origin的区别就可以更好的显示出来*/
+            padding: 20px;
+            border:2px #07ff0e solid;
+            margin: 30px;
+        }
+        #padding_location{
+            background-origin:padding-box;
+            background-repeat: no-repeat;
+            border:2px #07ff0e solid;
+        }
+        #border{
+            background-repeat: no-repeat;
+            background-origin:border-box;
+            border:2px #07ff0e solid;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        这个表情包在内容部分
+    </div>
+<div id='padding_location'>
+    这个表情包在填充部分
+</div>
+<div id="border">
+    这个表情包在边缘填充部分
+</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css盒子模型</title>
+    <style>
+        div{
+            /*使用div来定义盒子模型*/
+            background-color: #1c47ff;
+            width: 300px;
+            /*设定盒子的宽度为300px 盒子的总宽度为盒子的实际设置宽度+border*2+padding*2+magin*2*/
+            /*height:200px;*/
+            /*这个是盒子里面内容的实际宽度*/
+            border: 1px solid greenyellow;
+            /*这个border必须要一个参数solid 他控制的是内容与margin之间的边距厚度*/
+            padding:25px;
+            /*这个paddin是盒子里面内容距离盒子距离边的距离*/
+            margin:0px;
+            /*外边距填充内容这个是一个距离上一个盒子的距离*/
+            text-align: left;
+            /*控制文字放置的位置*/
+            vertical-align:center;
+            /*注意在盒子内部是不能调整字体的方向的这个只能是调整字体的位置如何但是可以改变盒子的形状来使布局好看一点*/
+        }
+    </style>
+</head>
+<body>
+    <h6>盒子模型演示</h6>
+    <p>css盒子模型是一个有边距 填充 和实际内容组成的盒子</p>
+    <div>这里面的是盒子模型里面的内容 这个盒子的内边距为25px 外边距为25px greenyellow颜色边框</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3 动画属性</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        div{
+            width: 10%;
+            background-color: #b7ffe2;
+            padding: 10px;
+            border-radius: 10px;
+            position:absolute;
+            /*@keyframes规定动画*/
+            /*简写动画属性*/
+            animation:show_property 10s;
+            text-align: center;
+            /*animation-name: none; 规定动画名字*/
+            /*animation-duration: inherit;规定动画播放一个周期的时间*/
+            /*animation-timing-function: inherit;规定播放动画的曲线时间效果 默认是ease*/
+            /*当动画静止时显示的效果样式*!*/
+            animation-fill-mode: backwards;
+            /*animation-delay: inherit;动画触发延时时间*/
+            /*动画播放的次数 这个默认是1*!*/
+            animation-iteration-count:infinite;
+
+            /*规定下一个播放周期是否进行倒置播放*!*/
+            animation-direction:alternate;
+            /*animation-play-state: ;规定动画是播放还是停止 默认是running*/
+        }
+
+        @keyframes show_property{
+            0%{background-color: #28e1ff;left:0;top:0px}
+            25%{background-color: #b7ffe2;left: 500px;top:0px}
+            50%{background-color: #ffb217;left: 500px;top:500px}
+            75%{background-color: #a7ff3c;left: 0px;top:500px}
+            100%{background-color: #07ff0e;left:0px;top:0px}
+        }
+    </style>
+</head>
+<body>
+<div>
+    这是测试
+</div>
+</body>
+</html>

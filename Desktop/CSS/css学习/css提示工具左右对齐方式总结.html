@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css左右下拉对齐总结</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        /*左边的按钮设置*/
+        .tipefont{
+            font-size: 1px;
+            background-color: #a7ff3c;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-align: center;
+            display:inline-block;
+            margin: 0px;
+            border: #ffb217 solid;
+            border-width: 2px;
+            position: absolute;
+            top:0px;
+            left: 0px;
+        }
+        /*左边的提示信息显示设置    */
+        .tipefont .dropdown-content{
+            display:inline-block;
+            font-size: 1px;
+            font-family: "Times New Roman";
+            color: black;
+            background-color: #07ff0e;
+            text-align: center;
+            visibility:hidden;
+            border-radius: 4px;
+            z-index: -1;
+            position: absolute;
+            top:39px;
+            left: 0px;
+            padding:4px 2px;
+            margin: 0px;
+            border: #1c47ff solid;
+            border-width: 2px;
+            font-size:1px;
+
+            /*右边的按钮设置*/
+        }
+        .but_right{
+            width: 10%;
+            border-radius: 4px;
+            background-color:chartreuse;
+            color: black;
+            border: #ffb217 solid;
+            position: absolute;
+            display: inline-block;
+            right: 0px;
+            border-width: 2px;
+            font-size:1px;
+            text-align: center;
+            padding:10px 20px;
+            /*注意在边框显示中如果变框的宽度太大可能是width给的太大而不是padding的问题*/
+
+            /*右边的提示信息显示设置*/
+        }
+        .but_right .content_right{
+            visibility: hidden;
+            /*这里再次注意一下如果元素出现显示不对(出现一列)的问题就是增加了width特性*/
+            display: inline-block;
+            border: #1c47ff 2px ;
+            background-color: #07ff0e;
+            color: black;
+            /*注意在容器里面要设置一个位置来确定元素的位置否则元素会跟母元素合并在一起 也就是默认情况下属性是共用的*/
+            /*注意 绝对位置会参照父级的位置 而不是网页变框的位置*/
+            position: absolute;
+            right: 0px;
+            top:39px;
+            text-align: center;
+            z-index: -1;
+            padding: 4px 2px;
+            /*给边框加上边线要加上solid特性 否则边线显示不出来*/
+            border: #1c47ff 2px solid;
+
+            border-radius: 4px;
+
+        }
+        /*左边触发提示设置*/
+        .but_right:hover  .content_right{
+            visibility: visible;
+
+        }
+        /*右边触发提示设置*/
+        .tipefont:hover .dropdown-content{
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <div class="tipefont">
+        这是左边提示按钮
+        <span class="dropdown-content">这是左边提示信息</span>
+    </div>
+    <div class="but_right">
+        这是右边提示按钮
+        <a class="content_right">这是右边提示信息</a>
+    </div>
+</body>
+</html>

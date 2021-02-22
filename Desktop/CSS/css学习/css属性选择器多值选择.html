@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css属性选择器多值选择</title>
+    <style>
+        /*匹配所有的show值值注意~=匹配的是一个单词*/
+        [title~=show]{
+            color: #a7ff3c;
+        }
+        /*匹配的是一串字符 但是单词要使用"-"隔开要不然匹配不到*/
+        [title|=time]{
+            color: #1c47ff;
+        }
+    </style>
+</head>
+<body>
+    <p title="show_style">这是显示文本</p>
+    <p title="show style">这是显示文本</p>
+    <p title="style show">这是显示文本</p>
+    <p title="time-isstrain">这是显示文本</p>
+    <p title="-time-is strain">这是显示文本</p>
+    <p title="time">这是显示文本</p>
+</body>
+</html>

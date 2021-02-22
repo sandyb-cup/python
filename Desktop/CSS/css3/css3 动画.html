@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3动画概念</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        div{
+            position: absolute;
+            left: 35%;
+            top:30%;
+            width: 30%;
+            padding: 30px;
+            background-color: #07ff0e;
+            /*当创建一个动画的时候要绑定一个选择器要不然动画不起效果*/
+            /*动画的时长动画的名称要绑定到一个选择器中*/
+            animation: cartoon 5s;
+            border-radius:30px;
+            /*-webkit-animation: cartoon 5s;*/
+        }
+        @keyframes cartoon {
+            from{background-color: #07ff0e}
+            to {background-color: #28e1ff}
+            to{background-color: yellow}
+        }
+    </style>
+</head>
+<body>
+<div>
+这是一个动画效果显示这个使用的是keyframes创建一个动画属性 显示效果设置
+</div>
+</body>
+</html>

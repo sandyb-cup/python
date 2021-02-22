@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3按钮阴影</title>
+    <style>
+        body{
+            margin:0;
+        }
+        .button{
+            display: inline-block;
+            width: 10%;
+            padding:20px;
+            background-color: #07ff0e;
+            color:white;
+            border: none;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 6px 0 rgba(0,0,0,0.5);
+            position: relative;
+            left:45%;
+            top:100px;
+            outline:none;
+        }
+        .button:active{
+            transform: translateY(4px);
+            box-shadow: 0 2px 0 rgba(0,0,0,0.9);
+        }
+    </style>
+</head>
+<body>
+<button class="button">
+    Button
+</button>
+</body>
+</html>

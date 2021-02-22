@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css position absolute</title>
+    <style>
+        p._absolute{
+            position: absolute;
+            left: 20px;
+            top:80px;
+            /*绝对位置*/
+            /*绝对位置不会参考上一段文字的位置 所以有时候设置不好会出现重叠现象*/
+        }
+    </style>
+</head>
+<body>
+     <p>这是没有设置绝对位置的文字</p>
+    <p class="_absolute">这是设置了绝对位置的文本位置</p>
+
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css lang伪类</title>
+    <style>
+        p:lang(no){
+            quotes: '~' '~';
+            color: #1c47ff;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        一些文本
+        <q lang="no">
+        这是lang伪类设置的样式
+        </q>
+        一些文本
+    </p>
+</body>
+</html>

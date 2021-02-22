@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3排列属性order</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .flex-container{
+            display: flex;
+            height: 600px;
+            width: 100%;
+            background-color: #28e1ff;
+            border-radius: 10px;
+            justify-content: center;
+        }
+        .flex-item{
+            height: 200px;
+            width: 300px;
+            background-color: red;
+            border-radius: 5px;
+            text-align: center;
+            margin-right: 30px;
+        }
+        /*order属性是越小的排在越前面可以为负值*/
+        .first{
+            order: -1;
+        }
+    </style>
+</head>
+<body>
+<div class="flex-container">
+    <div class="flex-item">flex item1</div>
+    <div class="flex-item first">flex item2 <br>
+        使用了order属性
+    </div>
+    <div class="flex-item">flex item3</div>
+</div>
+</body>
+</html>

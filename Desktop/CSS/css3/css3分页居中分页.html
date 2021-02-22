@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3分页居中分页</title>
+    <style>
+        body{
+            margin:0px;
+        }
+        ul.pagination{
+            display: inline-block;
+        }
+        ul.pagination li{
+            display: inline;
+            float: left;
+            margin:0;
+        }
+        ul.pagination li:last-child a{
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        ul.pagination li:first-child a{
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        ul.pagination li a{
+            border: #bbbbbb 1px solid;
+            padding: 10px 20px;
+            float: left;
+            color: black;
+            text-decoration: none;
+            transition: background-color 0.4s;
+        }
+        div.center{
+            text-align: center;
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+
+        }
+        ul.pagination li a.active{
+            background-color: #07ff0e;
+            color: white;
+        }
+        ul.pagination li a:hover:not(.active){
+            background-color: #bbbbbb;
+            color: white;
+            cursor: wait;
+        }
+    </style>
+</head>
+<body>
+<div class="center" style="position: fixed;bottom:-20px">
+    <ul class="pagination">
+        <li><a href="#">«</a></li>
+        <li><a href="#">1</a></li>
+        <li><a class="active" href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+        <li><a href="#">7</a></li>
+        <li><a href="#">»</a></li>
+    </ul>
+</div>
+</body>
+</html>

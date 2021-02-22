@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css选择器之后代选择器</title>
+
+    <style>
+        div p{
+            color: gold;
+            /*div p后代选择器他下面的属性都受他的控制*/
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>段落1在div中</p>
+        <p>段落2在div中</p>
+        <span><p>段落5在div中</p></span>
+    </div>
+    <p>段落3不在div中</p>
+    <p>段落4不在div中</p>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网格视图</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: white;
+        }
+        /*设置所有的属性都是盒子属性*/
+        *{
+            box-sizing: border-box;
+        }
+        .title{
+            border: 1px red solid;
+            width: 100%;
+            height: auto;
+            padding:5px 0px;
+            text-align: center;
+            color:#555555;
+            background-color: white;
+            top:0px;
+            float: left;
+            display: block;
+        }
+        .menu{
+            border: 1px solid red;
+            width: 10%;
+            height: 500px;
+            position:relative;
+            float: left;
+        }
+        .menu button{
+            background-color:#555555;
+            width: 100%;
+            padding: 20px;
+            display: block;
+            color: white;;
+            text-decoration: none;
+            margin: 20px 0;
+            border-radius: 5px;
+            border: 1px solid black;
+            cursor:pointer;
+        }
+        .menu button:hover{
+            background-color:whitesmoke;
+            color: black;
+        }
+        .contain{
+            height: 500px;
+            border: 1px solid red;
+            resize: both;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body style="margin-bottom: 300px">
+<div class="title">
+    <h1 style="font-family:Seravek">网页响应式设计</h1>
+</div>
+<div class="menu">
+   <button>
+       百度
+   </button>
+    <button>
+        腾讯
+    </button>
+    <button>
+        阿里
+    </button>
+    <button>
+        网易
+    </button>
+    <button>
+        京东
+    </button>
+    <button>
+        字节跳动
+    </button>
+</div>
+<div class="contain">
+    这是内容位置
+</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3在伪元素后面添加阴影</title>
+    <style>
+        body{
+            margin:0;
+            background-color: #f1f1f1;
+        }
+        #boxshadow{
+            position:relative;
+            left: 25%;
+            height: 25%;
+            width:50%;
+            border-radius: 30px;
+            background-color:white;
+            padding: 10px;
+        }
+         #boxshadow img{
+            border-radius:20px 20px 0 0;
+            width: 100%;
+            background-repeat: no-repeat;
+        }
+        #contain{
+            padding: 30px;
+            text-align: center ;
+        }
+        #boxshadow::after {
+           content: '';
+            position: absolute;
+            /*阴影显示在图片下面如果设置成显示在屏幕上面下面的参数设置成1*/
+            z-index: -1; /* hide shadow behind image */
+            box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+            /*设置阴影的宽度*/
+            width: 60%;
+            /*设置阴影的起始位置*/
+            left: 20%; /* one half of the remaining 30% */
+            /*设置阴影的宽度*/
+            height: 100px;
+            /*设置阴影的显示位置*/
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="boxshadow">
+    <img src="images/woerwo_v90.jpg" alt="沃尔沃官方图片">
+     <p id="contain">
+         这里填写一些汽车参数
+     </p>
+</div>
+</body>
+</html>

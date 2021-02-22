@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3换行属性总结</title>
+    <style>
+        body{
+            margin:0;
+        }
+        p.text{
+            width: 5%;
+            border:1px black solid;
+            /*保持单词的完整性*/
+            word-break:keep-all ;
+
+        }
+        p.text1{
+            width:5%;
+            border:1px black solid;
+            /*忽视单词的完整性*/
+            word-break: break-all;
+        }
+
+    </style>
+</head>
+<body>
+<p class="text">This paragraph contains some text. This line will-break-at-hyphenates.</p>
+<p class="text1">This paragraph contains some text. This line will-break-at-word</p>
+</body>
+</html>

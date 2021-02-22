@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css控制格子位置</title>
+    <style>
+        body{
+            margin:0px;
+        }
+        div.alt{
+            background-color: #f1f1f1;
+            color: black;
+            border-radius: 10px;
+            float:left;
+            /*resize属性要和overflow属性一起使用*/
+            resize:both;
+            overflow: auto;
+        }
+        div p{
+            font-size: 2px;
+            padding: 20px;
+        }
+        div.alt1{
+            background-color: #a7ff3c;
+            color: black;
+            border-radius:10px;
+            width:30%;
+            position:absolute;
+            right:0px;
+            clear:both;
+            resize:both;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+     <div class="alt">
+         <h2>这是盒子1</h2>
+         <p>这是一个盒子它的宽度是屏幕的10%高度是屏幕的10px,一个非常好看的盒子
+             <br>
+             我个人非常喜欢这种布局，因为他能控制网页的布局
+         </p>
+     </div>
+    <div class="alt1">
+        <h2>这是盒子2</h2>
+        <p>这是一个盒子它的宽度是屏幕的10%高度是屏幕20px,也是一个非常好看的盒子</p>
+    </div>
+</body>
+</html>

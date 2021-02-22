@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3边界图片</title>
+    <style>
+        div{
+           /*border这个条件一定要加上要不然后面的花边显示不出来 transparent显然的*/
+            border:15px solid transparent ;
+            width:250px;
+            padding:10px 20px;
+        }
+
+        #round
+        {
+            /*-webkit-border-image:url(images/花边2.png) 30 30 round; !* Safari 5 and older *!*/
+            /*-o-border-image:url(images/花边2.png) 30 30 round; !* Opera *!*/
+            border-image:url(images/花边2.png) 30 30 round;
+        }
+        /*stretch弹性拉伸*/
+        #stretch{
+            border-image: url("images/花边2.png") 30 30 stretch;
+        }
+        #other{
+            border-image:url("images/花边2.png")30 30 space;
+        }
+    </style>
+</head>
+<body>
+    <div id="round">
+        这是边缘填充的花边显示样式
+    </div>
+    <div id="stretch">
+        这是中间拉伸花边的显示样式
+    </div>
+    <div id="other">
+        这是空间属性样式显示
+    </div>
+    下面是花边图片
+    <div>
+        <img src="images/花边2.png" alt="">
+    </div>
+</body>
+</html>
