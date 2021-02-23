@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript访问对象</title>
+</head>
+<body>
+<h1>创建和使用对象方法</h1>
+<p>将方法放在对象里面之后进行调用</p>
+<p>将对象方法放在对象属性当中</p>
+<p id="demo"></p>
+<script>
+    var object = {
+        first_Name : 'Done',
+        last_Name : 'Toto',
+        id : 5555,
+        //创建一个方法
+        fullName:function(){
+            //将对象里面的方法值返回出去
+            return this.first_Name+" "+this.last_Name
+        }
+
+    };
+    document.getElementById('demo').innerHTML=object.fullName();
+</script>
+</body>
+</html>

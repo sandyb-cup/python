@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript表单</title>
+
+</head>
+<body>
+<script type="text/javascript">
+    function validateForm(){
+        var x = document.forms['myForm']['fname'].value;//表单通过name来进行定位 myForm下面的fname来进行定位 使用form来进行元素获取
+    if (x==null||x==''){
+        alert('请输入名字');
+        return false;
+        }
+    }
+</script>
+<form action="" name="myForm" onsubmit="return validateForm()",method="post">
+<!--    通过onsubmit来进行提交调用函数进行判断-->
+    名字: <input type="text" name="fname">
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>

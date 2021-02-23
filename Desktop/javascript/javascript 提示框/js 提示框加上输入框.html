@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>提示框加上输入框</title>
+
+</head>
+<body>
+<p id="demo"></p>
+<script>
+    var x = '';
+    var r = prompt('请你输入你的名字:','zhangxin')
+    if (r!=""&&r!=null){
+        x = '你好'+r+'欢迎来到我的网页'
+    }
+    else{
+        x = '请输入你的名字'
+    }
+    document.getElementById('demo').innerHTML=x
+</script>
+</body>
+</html>

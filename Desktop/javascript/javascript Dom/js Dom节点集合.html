@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js 节点集合</title>
+</head>
+<body>
+<h1>使用collection集和来获取元素</h1>
+<div id="div1">
+    <p id="p1">这是段落1</p>
+    <p id="p2">这是段落2</p>
+</div>
+<p id="demo"></p>
+<p id="show_length"></p>
+<p id ='node'></p>
+<script>
+    var mycollection = document.getElementsByTagName('p')
+    var node =document.querySelectorAll('p')
+    document.getElementById('demo').innerHTML="Show:<span style='color: #ff118c'>"+mycollection[1].innerHTML+'</span>'
+    document.getElementById('show_length').innerHTML='p元素个数:<span style="color: #ff118c">'+mycollection.length+'</span>'
+    document.getElementById('node').innerHTML=node.length
+</script>
+</body>
+</html>

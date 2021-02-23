@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript调用带参数的函数</title>
+</head>
+<body>
+<h1>带参数函数调用</h1>
+<p style="white-space: pre-wrap">
+    函数是触发之后的显示他需要条件触发
+    或者是他调用时可重复执行的代码块
+</p>
+<p id = 'demo'></p>
+<script>
+    function test(para1,para2){
+        document.getElementById('demo').innerHTML=para1+para2
+    }
+</script>
+<button type="button" onclick="test('这是参数1','这是参数2')">
+    按下按钮
+</button>
+</body>
+</html>

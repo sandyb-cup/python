@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript test exec正则表达式</title>
+
+</head>
+<body>
+<script>
+    var patt = new RegExp('e');
+    document.write(patt.test('The best things in life are free'))
+</script>
+<p>这个只会返回true或者是False</p>
+<h2>下面是exec实例</h2>
+<p>这个匹配出来的是正则表达式匹配的字符结果</p>
+<script>
+    var patt = new RegExp('e')
+    document.write(patt.exec('The best things in life are free'))
+
+</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript dom方法</title>
+
+</head>
+<body>
+<p>请选择100-300之间的数否则会提示错误</p>
+number:<input id='demo' type="number" min="100" max="300" required="required">
+<p id='tip'></p>
+<script>
+    function error_Tip() {
+        var num = document.getElementById('demo')
+        //如果input上面的值符合要求checkValidity返回的是一个true否则是false
+        //validity有效的
+        if (num.checkValidity() == false) {
+            document.getElementById('tip').innerHTML=num.validationMessage;
+            // alert(num.validationMessage)
+        }
+    }
+</script>
+<button type="submit" onclick="error_Tip()">提交</button>
+<!--    -->
+<h1>下面是setCustomValidity使用的方法</h1>
+<p>请输入100-300之间的数</p>
+<input type="number" id="setCustomValidity" min="100" max="300" required>
+
+<p id="set_tip"></p>
+<script>
+    function setCustVlidity(){
+        var number = document.getElementById('setCustomValidity')
+        if(number.checkValidity()==false){
+            if(number.value == ''){
+                number.setCustomValidity('值不能为空')
+            //这是自定义的信息提示
+            }
+            else if(number.value<100||number>300){
+                number.setCustomValidity('请输入100-300之间的值')
+            }
+            document.getElementById('set_tip').innerHTML=number.validationMessage;
+        }
+        else{
+            document.getElementById('set_tip').innerHTML='输入正确';
+        }
+    }
+</script>
+<button type="submit" onclick="setCustVlidity()">提交</button>
+</body>
+</html>

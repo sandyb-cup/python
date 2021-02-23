@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js 元素节点替换</title>
+</head>
+<body>
+<h1>使用replaceChild来替代文本内容</h1>
+<div id="div1">
+    <p id="p1">这是段落一</p>
+    <p id="p2">这是段落2</p>
+
+</div>
+<script>
+    var p = document.createElement('p')
+    var text = document.createTextNode('这是新的文本')
+    p.appendChild(text)
+    var parent = document.getElementById('div1')
+    var child = document.getElementById('p1')
+    parent.replaceChild(p,child)
+
+</script>
+</body>
+</html>

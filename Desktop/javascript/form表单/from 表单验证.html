@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form表单验证</title>
+</head>
+<body>
+<script>
+    function validatelForm(){
+        var x = document.forms['myForm']['fname'].value
+        var password = document.forms['myForm']['password'].value
+        //上面要注意value的后面没有"()"
+        alert(password)
+        if(x==''||isNaN(x)||password==''||isNaN(password)){
+            alert('填写有效信息')
+            return false;
+        }
+    }
+</script>
+<form action="" name="myForm" onsubmit="return validatelForm()">
+<!--    注意这个验证信息要写在form表单上面而不能写在button上面 -->
+    user:<input type="text" name="fname" autocomplete="on">
+    password: <input type="text" name="password" autocomplete="on">
+    <button type="submit">提交</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript try catch throw finally 实例</title>
+</head>
+<body>
+<h1>运用实例</h1>
+<p>请输入1～10之间的数字 无论输入错误还是正确都会清空输入框中的数字</p>
+
+<input type="text" id = 'demo'>
+<button type="button" onclick="message_Info()">提交</button>
+<p id="p01"></p>
+
+<script>
+    function message_Info(){
+        var message, value
+        message = document.getElementById('p01')
+        message.innerHTML="";
+        value = document.getElementById('demo').value;
+        try{
+            if(value == "") throw '值是空的';
+            if(isNaN(value)) throw '值是一个非数字';
+            value = Number(value);
+            if (value< 10) throw '太小';
+            if (value > 10) throw '太大'; //后面trow抛出的是错误信息 在后面的err中进行调用
+        }
+        catch (err){
+            message.innerHTML = '错误:'+err+'.';
+        }
+        finally{
+            document.getElementById('demo').value ='';
+        }
+    }
+</script>
+</body>
+</html>

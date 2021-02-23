@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript错误</title>
+</head>
+<body>
+<p style="white-space: pre-wrap">
+    try 测试代码块的错误
+    catch 语句处理错误
+    throw 主动抛出错误
+    finally 在try和catch之后无论代码块是否发生异常都会执行
+</p>
+<script>
+    var text = '';
+    function message_info(){
+        try {
+            adddlert("Welcome guest!");
+        }
+        catch(err){
+            text = '本页有一个错误'+"\n";
+            //err.message捕获错误信息
+            text += '错误描述:'+err.message+"\n";
+            text += '点击确定继续';
+            alert(text)
+        }
+    }
+</script>
+<input type="button" onclick="message_info()" value="查看信息">
+</body>
+</html>

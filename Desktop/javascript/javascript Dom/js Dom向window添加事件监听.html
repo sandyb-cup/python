@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dom向window事件添加事件监听</title>
+</head>
+<body>
+<p>重置窗口大小激活随机函数</p>
+<p id = 'showNum'></p>
+<script>
+    window.addEventListener('resize',randomNum);
+    function randomNum(){
+        document.getElementById('showNum').innerHTML=Math.random()
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // 将延迟的部分写成一个函数之后进行调用
+    function print(delay, message){
+        return new Promise(function (resolve,reject){
+            setTimeout(function (){
+                console.log(message);
+                resolve();
+            //    这是一个函数体里面使用了resolve函数进行修饰
+            },delay);
+        })
+    }
+    //调用之前的函数实现延迟效果
+    // print(1000,'First').then(function (){
+    //     return print(4000,'Second');
+    // }).then(function (){
+    //     print(3000,'Third')
+    // })
+    // 使用async异步编程使代码块显示的更好看 这个与上面的then函数写出来的效果使一样的
+    async function asyncFun(){
+        await print(1000,'First');
+        await print(3000,'Second');
+        await print(2000,'Third');
+    //    注意这个awit指令后面跟着一个promise函数 异步函数会在这个await前面暂停 知道运行之后再往下面运行 (这还是个同步逻辑)
+    //    如果没有加上一个await函数那她就是一个异步逻辑
+    }
+    asyncFun()
+</script>
+
+</body>
+</html>

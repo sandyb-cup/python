@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript promise创建时间延迟实例</title>
+
+</head>
+<body>
+<script>
+<!--    注意这里不能使用new创建对象的function方法来进行函数的创建这个函数-->
+    function print(delay, message){
+        return new Promise(function (resolve, reject){
+            setTimeout(function (){
+                console.log(message);
+                resolve();//这里还是一个方法
+            },delay)
+        });
+    }
+   print(1000,'First').then(function (){
+        return print(4000,'Second');
+    }).then(function (){
+        print(3000,'Third')
+    })
+
+</script>
+</body>
+</html>

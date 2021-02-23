@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript consrtuctor属性</title>
+</head>
+<body>
+<p>
+    constructor属性它是返回javascript变量的构造函数
+</p>
+<p>下面是判断是否为数组</p>
+<p id="array">
+</p>
+<script>
+    fruits=['apple','pinapple','Orange','Mango'];
+    document.getElementById('array'). innerHTML=isArray(fruits)
+    info = fruits.constructor.toString()
+    window.alert(info)
+    function isArray(myArray){
+        window.alert(myArray.constructor.toString().indexOf('Array'))
+        return myArray.constructor.toString().indexOf('Array')>-1;
+
+        // indexof返回字符串中字符出现的字符开始位置下标 如果没用找到对应字符那她返回的就是-1
+
+    }
+</script>
+<br>
+<button type="button" onclick="isArray(fruits)">按我显示toString返回类型</button>
+</body>
+</html>

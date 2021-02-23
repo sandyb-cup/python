@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript 正则表达式</title>
+</head>
+<body>
+<p id="search_str"></p>
+<p> <b>注意:正则表达式的后面是一个修饰符号 i表示不区分大小写</b>使用search正则表达式匹配出来的是表达式匹配的起始位置</p>
+<script>
+    var str = 'Visit me'
+    document.getElementById('search_str').innerHTML=str.search(/it/i)
+</script>
+<h1>下面是使用replace案例</h1>
+<p id="replace_str">
+    Visit me
+</p>
+<button type="button" onclick="exchange()">点我</button>
+<script>
+    function exchange(){
+        //获取html中的字符串后面要加上innerHTML
+        var str = document.getElementById('replace_str').innerHTML
+        var replace = str.replace(/me/i,'you')
+        document.getElementById('replace_str').innerHTML=replace
+    }
+</script>
+<h2>
+    修饰符号
+</h2>
+<p style="white-space: pre-wrap">
+    i 	执行对大小写不敏感的匹配
+    g 执行全局匹配
+    m 执行多行匹配
+</p>
+</body>
+</html>

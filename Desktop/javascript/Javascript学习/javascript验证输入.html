@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript验证输入</title>
+</head>
+<body>
+     <h1>如果输入的不是一个数字网页上面会提示错误</h1>
+     <input type="text" id = 'demo'>
+     <script>
+         function verify(){
+             element = document.getElementById('demo').value;
+             //注意后面的""是匹配之后的替代符 这里是没有
+             if(isNaN(element)||element.replace(/(^\s*)|(\s*$)/g,"")==""){
+                 alert('请输入数字')
+             }
+         }
+     </script>
+<button type="button" onclick="verify()">点击我</button>
+</body>
+</html>

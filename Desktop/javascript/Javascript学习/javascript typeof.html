@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript typeof</title>
+</head>
+<body>
+<p>javascript null typeof valueof underfind</p>
+<p>使用typeof查看数据类型</p>
+<p>实例</p>
+<p id="typeof">
+
+</p>
+<script>
+    var person = null //null 没有值就是空对象 它是一个对象
+    var person = undefined //使用undefined清空对象 他返回的也是也个对象之歌对象的类型是undefined
+    //任何对象都可以使用设置undefined来清空
+    document.getElementById('typeof').innerHTML=typeof 'john'+ "<br>"+typeof 3.14 + "<br>"+typeof false +'<br>'+typeof [1,2,3,4] + '<br>'+typeof {name:'john',age:12}
+</script>
+<p style="white-space: pre-wrap"><b>注意:</b>
+    null 值是被动赋值当使用玩一个较大的对象时需要释放内存使用赋值null来释放
+    undefined 是没用赋值过的对象默认情况下它是一个undined对象
+</p>
+
+</body>
+</html>

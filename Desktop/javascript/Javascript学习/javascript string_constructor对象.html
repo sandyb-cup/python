@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>string_constryctor 对象</title>
+
+</head>
+<body>
+<p id="demo">
+</p>
+<p>
+    返回string对象属性创造的函数
+    像var text = 'Hello world'
+    返回的函数是String()函数对象
+    <b style="color: rgba(255,13,104,0.56)">如果说是全局变量text的constructor函数的对象是function</b>
+    也就是函数方法函数
+</p>
+
+<script>
+    function text(){
+        var text = 'Hello world'
+        document.getElementById('demo').innerHTML=text.constructor
+    }
+</script>
+<button type="button" onclick="text()",>
+    这是显示对象属性函数的按钮
+</button>
+</body>
+</html>

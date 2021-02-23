@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript基本使用概念</title>
+    <script>
+        document.write('<p>这是一个段落<\p>')
+    </script>
+</head>
+<body>
+<p style="white-space: pre-wrap">
+    您只能在 HTML 输出中使用 <strong>document.write</strong>。如果您在文档加载后使用该方法，会覆盖整个文档。
+    <b>概念如下:</b>
+    用javascript编写的代码只能通过html/xhtml文档才能执行，代码一行一行解析，文档在加载的过程中实际是一边加载一边用document.write写出内容到屏幕上，而加载完成后，
+    document就关闭。如果再调用document.write往网页上写内容的话，就会重写document。
+</p>
+</body>
+</html>

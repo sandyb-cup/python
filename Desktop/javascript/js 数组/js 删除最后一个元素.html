@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>删除最后一个元素</title>
+</head>
+<h1>使用pop函数删除数组的最后一个元素 如果单独使用pop函数他显示的是最后一个元素</h1>
+<body>
+<p id="demo"></p>
+<button type="button" onclick="delect()">Button</button>
+<br>
+<script>
+    var array = [
+        'bnana',
+        'apple',
+        'orange',
+        'cucumber',
+    ]
+    document.write(array)
+    function delect(){
+        array.pop();
+        document.getElementById('demo').innerHTML=array
+    }
+</script>
+</body>
+</html>

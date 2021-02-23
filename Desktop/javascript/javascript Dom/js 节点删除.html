@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js 节点删除</title>
+</head>
+<body>
+<p>删除一个节点显示 使用removechild</p>
+<div id="div1">
+    <p id='p1'>这是段落一</p>
+    <p id="p2">这是段落2</p>
+</div>
+<script>
+    var parent = document.getElementById('div1');
+    var chlid = document.getElementById('p1');
+    parent.removeChild(chlid)
+</script>
+</body>
+</html>

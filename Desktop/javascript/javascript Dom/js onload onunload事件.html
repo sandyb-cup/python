@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js onload onunload事件</title>
+</head>
+<body onunload="checkCookies()">
+<script>
+    function checkCookies(){
+        if (navigator.cookieEnabled==true){
+            // navigator领航员
+            alert('cookies可以用')
+        }
+        else{
+            alert('cookies不可用')
+        }
+    }
+</script>
+<p>页面检查cookies是否可以用</p>
+</body>
+</html>

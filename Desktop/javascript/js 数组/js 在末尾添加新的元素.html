@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js 在末尾添加新的元素</title>
+
+</head>
+<body>
+<h1>使用push在数组后面添加一个新元素</h1>
+<button type="button" onclick="add()">
+    Button
+</button>
+<p id="demo"></p>
+<script>
+    var array = [
+        'apple',
+        'bnana',
+        'orange',
+        'cucumber',
+    ]
+    function add(){
+        array.push('pinapple');
+        document.getElementById('demo').innerHTML=array
+    }
+</script>
+</body>
+</html>

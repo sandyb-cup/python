@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript 函数调用</title>
+</head>
+<body>
+<script>
+    function text(a, b){
+
+        console.log(a+b);
+    }
+    array = [1,2]
+    text.call(text,1,2)
+    // 使用call函数不能使用array来直接赋值
+    // 第一个参数必须要是函数的本身 后面是函数的参数
+    text.apply(text,array)
+//    使用apply不能使用单个参数来进行赋值 要使用数组的形式
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 对象访问的两种方法</title>
+</head>
+<body>
+<h1>对象访问的两种属性</h1>
+<p style="white-space: pre-wrap">
+    property.
+    property['xx']
+</p>
+<p id="demo"></p>
+<script>
+    var person = {
+        name : '世安蒂',
+        age : '34',
+    }
+    document.getElementById('demo').innerHTML=person.name+'今年'+person['age']+'岁'
+</script>
+
+</body>
+</html>

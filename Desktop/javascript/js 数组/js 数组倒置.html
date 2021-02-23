@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js 数组倒置</title>
+</head>
+<body>
+<h1>
+    使用reverse进行数组倒置效果
+</h1>
+<p id="demo"></p>
+<button type="button" onclick="resv()">
+    Button
+</button>
+<script>
+    var array = [
+        'pinapple',
+        'apple',
+        'orange',
+        'cucumber',
+    ]
+    function resv(){
+        array.reverse()
+        document.getElementById('demo').innerHTML=array
+    }
+</script>
+</body>
+</html>

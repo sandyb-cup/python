@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript改变图像显示</title>
+</head>
+<body>
+<script>
+    function exchange_img(){
+        element = document.getElementById('img_show')
+        if (element.src.match('light'))
+        {
+            element.src = 'images/light.gif'
+        }
+        else{
+            element.src = 'lightless.gif'
+        }
+    }
+</script>
+    <img id="img_show" src="images/lightness.gif" alt="灯灭" onclick="exchange_img()" width="100" height="180">
+</body>
+</html>

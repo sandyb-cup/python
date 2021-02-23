@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript之for循环</title>
+</head>
+<body>
+<div id="demo_for">
+
+</div>
+<p style="color: pink;white-space: pre-wrap">注意:在使用for循环时第一个值是赋值条件语句 <b>如果前面已经对值进行了赋值条件一的条件可以为空</b>
+    for循环当中第二个语句是条件语句这个语句的值是控制循环条件
+    第三个是赋值语句自动加一或者是其他条件 条件三也可以省略这个条件可以放在后面的代码块中 看21行代码
+</p>
+<script>
+    var list = ['BMW','AUDI','BENZ','Volov'];
+    var start_num = 0;
+    for(start_num;start_num<list.length;start_num++){
+        // 这里要使用write函数使用docment.getelementid方法只会显示最后一个元素
+        document.write('This car is'+list[start_num]+'<br>')
+        // start_num++;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js 通过dom来分配任务</title>
+</head>
+<body>
+<p>点击按钮调用Date()函数显示时间</p>
+<button id="button1">按钮</button>
+<script>
+    document.getElementById('button1').onclick=function (){show_time()};
+    //激活事件调用函数
+    function show_time(){
+        document.getElementById('demo').innerHTML=Date();
+    }
+</script>
+<p id="demo"></p>
+</body>
+</html>

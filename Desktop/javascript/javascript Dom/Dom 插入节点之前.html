@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>插入节点之前 insertBefore</title>
+</head>
+<body>
+<div id='div1'>
+    <p id="p1">这是段落1</p>
+    <p id="p2">这是段落2</p>
+</div>
+<script>
+    var para = document.createElement('p')
+    var x = document.createTextNode('这是新的段落')
+        para.appendChild(x)
+    var element = document.getElementById('div1')
+    var chlid = document.getElementById('p1')
+    element.insertBefore(para, chlid)
+</script>
+</body>
+</html>

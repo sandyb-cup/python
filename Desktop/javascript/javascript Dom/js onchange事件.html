@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js onchange事件改变</title>
+</head>
+<body>
+<script>
+    function onchang(){
+        var x = document.getElementById('demoinput')
+        x.value = x.value.toUpperCase()
+    }
+</script>
+<!--onchang函数放在 input元素上面-->
+请输入你的名字: <input type="text" id="demoinput" onchange="onchang()">
+<p>当鼠标离开输入框时小写字母变成大写</p>
+</body>
+</html>

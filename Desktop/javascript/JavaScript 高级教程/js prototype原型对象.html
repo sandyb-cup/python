@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>prototype原型对象</title>
+</head>
+<body>
+<h1>用原型对象添加属性</h1>
+<p id="p1"></p>
+<script>
+    function Person(name,age,tall){
+        this.name = name;
+        this.age = age;
+        this.tall = tall;
+    }
+    Person.prototype.eyeColor=function (){
+        return 'black'
+    }
+    //前面一点要创建一个新的对象
+    var outPut=new Person('zhangxin','19','170');
+    document.getElementById('p1').innerHTML=outPut.eyeColor()
+</script>
+</body>
+</html>

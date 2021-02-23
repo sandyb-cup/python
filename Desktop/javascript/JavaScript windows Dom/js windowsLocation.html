@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>windowlocation</title>
+</head>
+<body>
+<h1>window location 对象使用方法</h1>
+<script>
+    document.write("<h2>返回当前页面的URL</h2>")
+    document.write(location.href)
+    document.write('<h2>返回文件路径名:</h2>')
+    document.write(location.pathname);
+    document.write('<h2>返回主机域名</h2>')
+    document.write(location.hostname)
+    document.write('<h2>返回主机端口:</h2>')
+    document.write(location.port)
+    document.write('<h2>加载新的文档</h2>')
+    function add_document(){
+        window.location.assign("https://www.baidu.com")
+    }
+    document.write('<button type="button" onclick="add_document()">Button</button>')
+    document.write('<h2>在页面上创建前按钮</h2>')
+    document.write('<button type="button"  onclick="goback()">下一个页面</button>')
+    function goback(){
+        window.history.forward();
+
+    }
+    document.write('<h2>返回前一个页面</h2>')
+    function back(){
+        window.history.back()
+    }
+    document.write('<button type="button" onclick="goback()">back</button>')
+
+</script>
+<a href="https://www.baidu.com" target="_self" style="color:#ffa823;text-decoration:none">百度</a>
+
+</body>
+</html>

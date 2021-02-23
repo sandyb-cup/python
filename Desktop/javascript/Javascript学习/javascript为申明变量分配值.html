@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript未申明变量分配值</title>
+</head>
+<body>
+<h1>javascrip未申明变量分配值</h1>
+<p>如果值没有申明var那这个值会自动分配给window全局变量 <b style="color: pink">(不能进行删除)</b> 如果有var 进行申明那这个值就是局部变量 <b style="color: pink">(可以进行删除)</b></p>
+<p><b>注意</b>在JavaScript中var是申明变量的一种方式 相当于python中的int string</p>
+<p id = 'param1'></p>
+<p id= "param2"></p>
+<script>
+    var carname = 'volvo'; //这个是局部变量不可以进行删除
+    car_Person = '5';//没有申明变量的值视为全局变量能进行删除
+    delete carname;
+    // delete car_Person;
+    document.getElementById('param1').innerHTML=carname;
+    document.getElementById('param2').innerHTML=car_Person;
+</script>
+</body>
+</html>

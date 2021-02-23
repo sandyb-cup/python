@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript放在body中的函数案例</title>
+</head>
+<body>
+<script>
+    function exchange_p(){
+        element = document.getElementById('exchange')
+        element.innerHTML="这是一个段落"
+    }
+</script>
+<p id="exchange">这是一个案例 注意script属性也可以放在hand属性当中</p>
+<button type="button" onclick="exchange_p()">
+    按下我
+</button>
+</body>
+</html>

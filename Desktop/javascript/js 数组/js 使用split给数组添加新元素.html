@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用split给数组添加新元素</title>
+
+</head>
+<body>
+<h1>使用split给数组添加新元素</h1>
+<button type="button" onclick="SplitAdd()">Button</button>
+<p id="dmeo"></p>
+<script>
+    var array = [
+        'apple',
+        'pinapple',
+    ]
+    function SplitAdd(){
+        array.splice(1,0,'orange','watermelon')
+        document.getElementById('dmeo').innerHTML=array
+    }
+</script>
+</body>
+</html>

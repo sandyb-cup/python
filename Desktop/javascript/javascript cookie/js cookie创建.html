@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript cookie创建</title>
+
+</head>
+<body>
+<script>
+    //创建cookie值 后面的参数expres是cookie的有效时间 后面也可以添加cookie的保存路径 默认情况下cookie保存在本页面之下
+    document.cookie='userName=Andy;expires=Thu,18 Dec2024 12:00:00 GMT;path=/'
+    //读取cookie值
+    var x = document.cookie;
+    alert(x)
+    //修改cookie的值 相当于是创建一个cookie
+    var y = document.cookie='userName=Jonh mise;expires=Thu,18 Dec 2024 12:00:00;path=/';
+    alert(y)
+    //这里提示显示出来的userName='Jonh mise'
+    //删除cookie
+    var b = document.cookie='userName=;expires=Thu,18 Jan 2034 12:00:00;path=/'
+    alert(b)
+    function checkCookie(){
+        var usename = getCookie('username')
+        alert(usename)
+    }
+</script>
+<input type="button" value="Button" onclick="checkCookie()">
+</body>
+</html>

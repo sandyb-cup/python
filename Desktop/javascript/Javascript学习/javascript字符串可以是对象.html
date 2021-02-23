@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>字符串可以是对象</title>
+</head>
+<body>
+<h1>字符串可以是对象 使用new String("xxx")</h1>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<script>
+    var name = 'sandy';
+    var age = new String('sandy');
+    document.getElementById('demo1').innerHTML=typeof name;
+    document.getElementById('demo2').innerHTML=typeof age; //查看字符格式
+    document.getElementById('demo3').innerHTML=name === age; //===绝对相等即值相等 字符类型相等
+</script>
+</body>
+</html>

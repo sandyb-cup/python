@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript输出</title>
+    <script>
+        function output(){
+            element = document.getElementById('demo')
+            window.alert('警告')
+        }
+    </script>
+</head>
+<body>
+<h1>javascrpt输出</h1>
+<p id="demo">这是一个段落</p>
+<button type="button" onclick="output()">点击我有页面提示</button>
+<!--下面的script会直接输出到窗口-->
+<script>
+    window.alert(5 + 6)
+</script>
+</body>
+</html>

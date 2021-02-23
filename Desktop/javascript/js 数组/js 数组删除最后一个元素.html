@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js 删除最后一个元素</title>
+</head>
+<body>
+<h1>
+    使用shift函数删除数组的第一个元素
+</h1>
+<p id="demo"></p>
+<p id="demo1"></p>
+<button type="button" onclick="shift()">Button</button>
+<button type="button" onclick="unshift()">Button</button>
+<script>
+    var array = [
+        'pinapple',
+        'apple',
+        'orange',
+        'cucumber'
+    ]
+    function shift() {
+        array.shift()
+        document.getElementById('demo').innerHTML = array
+    }
+    function unshift(){
+        array.unshift('你好李焕英')
+        document.getElementById('demo1').innerHTML = array
+    }
+</script>
+</body>
+</html>

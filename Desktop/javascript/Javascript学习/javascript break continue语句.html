@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascrit break continue语句</title>
+
+</head>
+<body>
+<script>
+    var car_list=['BMW','volov','Audi'];
+    var x = 0;
+    while (x<10){
+        x ++;
+        if(x==2){
+            continue //这里的continue语句会跳过后面的document.write函数语句
+        }
+        document.write('This car name is '+x+'<br>');
+
+    }
+    // while (x<car_list.length){
+    //     if (x == 2){
+    //         continue
+    //     }
+    //
+    //     x ++;
+    // }
+    // document.write('This car name is '+x+'<br>');
+</script>
+</body>
+</html>

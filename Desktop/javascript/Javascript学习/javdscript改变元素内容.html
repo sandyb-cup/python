@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript改变元素内容</title>
+</head>
+<body>
+<p id="demo">
+    javascript能改变元素内容
+</p>
+    <script>
+        function exchange_element(){
+            x=document.getElementById("demo");//找到元素
+            x.innerHTML='Hello javascript';//改变内容
+        }
+    </script>
+<button type="button" onclick='exchange_element()'>
+        点击我
+</button>
+</body>
+</html>

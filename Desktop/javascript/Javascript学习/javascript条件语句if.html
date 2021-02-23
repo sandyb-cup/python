@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript条件语句if</title>
+
+</head>
+<body>
+<h1>JavaScript条件语句的实例</h1>
+<p>如果当前的时间是小于20:00 下面会显示good night</p>
+<p id="new_Time"></p>
+<script>
+    function data_Show(){
+        var x ="";
+        var date = new Date().getHours()
+        if (date<10){
+            document.getElementById('new_Time').innerHTML='good night'
+            x = 'good morning'
+        }
+        else if(date <16&&date>10){
+            document.getElementById('new_Time').innerText='good afternoon'
+        }
+        else{
+            document.getElementById('new_Time').innerText='good day'
+        }
+        // document.getElementById('new_Time').innerHTML=x
+    }
+</script>
+<button type="button" onclick="data_Show()">按下按钮</button>
+</body>
+</html>

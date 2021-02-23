@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript 自带异步编程</title>
+</head>
+<body>
+<p>下面出现的顺序不一样</p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<script>
+    setTimeout(function (){document.getElementById('demo1').innerHTML='demo1'},3000);
+    document.getElementById('demo2').innerHTML='demo2'
+</script>
+</body>
+</html>

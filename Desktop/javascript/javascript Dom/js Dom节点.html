@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dom节点</title>
+</head>
+<body>
+<p>创建节点在已有的函数上面添加一个元素</p>
+<div id='div'>
+    <p id="p1">这是第一个段落</p>
+    <p id="p2">这是第二个段落</p>
+</div>
+<script>
+    var p = document.createElement('p')
+    var c = document.createTextNode('这是一个新的段落')
+    p.appendChild(c)
+    //添加一个新的段落
+    var element = document.getElementById('div')
+    element.appendChild(p)
+</script>
+</body>
+</html>

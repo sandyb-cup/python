@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>时间函数来实现时间的计时跟停止</title>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+    var myTime ;
+    // myTime = setTimeout(startTime(),3000);
+    function startTime(){
+        var date = new Date()
+        var time = date.toLocaleString()
+        document.getElementById('demo').innerHTML=time
+        myTime = setTimeout(function(){alert('Hello')},3000)
+    }
+    function stopTime(){
+        clearTimeout(myTime);
+    }
+</script>
+<button type="button" onclick="startTime()">startTime</button>
+<button type="button" onclick="stopTime()">stopTime</button>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ajax创建</title>
+</head>
+<body>
+<script>
+    function loadXMLDoc(){
+        var xmlhttp;
+        //XMl后台数据传输通道负责前端与后端的数据交互
+        if (window.XMLHttpRequest){
+            //如果浏览器支持XMLHttpRequest对象下面就创建xmlhttp对象
+            xmlhttp = new XMLHttpRequest()
+        }
+        //如果浏览器不支持xmlHttprequest对象 创建
+        else{
+            xmlhttp = new ActiveXObject('Microsoft.XMLHTTP')
+        }
+        xmlhttp.onreadystatechange=function (){
+            if (xmlhttp.readyState==4 && xmlhttp.status==200){
+                document.getElementById('myDiv').innerHTML=xmlhttp.responseText;
+            }
+        }
+        // 向服务器发送请求
+        //参数 请求类型 请求的url 请求是否使用异步True false使用同步
+        xmlhttp.open('GET','ajax文本信息.txt',true);
+        //将请求发送到服务器send(string) string仅仅用在post请求上面
+        xmlhttp.send();
+    }
+</script>
+<div id="myDiv">使用axaj来改变文本信息</div>
+<button type="button" onclick="loadXMLDoc()">点击请求_修改内容</button>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript json属性</title>
+
+</head>
+<body>
+<script>
+    var text ={'name':'baidu','url':'www.baidu.com'}
+    //json参数解释（str,place,table）str:要变成JSON格式的字符串 replace:正则 table:空格数量
+    results = JSON.stringify(text,null,4)
+    document.write('三种参数的情况')
+    document.write('<br>')
+    //per是一个块级元素 他会显示出元素的换行空格情况
+    document.write("<pre>")
+    document.write(results)
+    document.write('</pre>')
+    document.write('下面是一个参数的情况')
+    results_one = JSON.stringify(text)
+    document.write('<br>')
+    document.write('<pre>')
+    document.write(results_one)
+    document.write("</pre>")
+
+</script>
+</body>
+</html>

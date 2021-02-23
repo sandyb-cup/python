@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js Dom向同一个元素添加多个事件</title>
+</head>
+<body>
+<p>前一个事件不会被后面的事件覆盖</p>
+<button id="button">
+Button
+</button>
+<p id="showInfo"></p>
+<script>
+    document.getElementById('button').addEventListener('mouseover',Ms);
+    document.getElementById('button').addEventListener('click',Cc);
+    document.getElementById('button').addEventListener('mouseout',Mm);
+
+    function Ms(){
+        document.getElementById('showInfo').innerHTML+='mouseover'+'<br>'
+    }
+    function Mm(){
+        document.getElementById('showInfo').innerHTML+='mousemove'+'<br>'
+    }
+    function Cc(){
+        alert('Button click')
+    }
+</script>
+</body>
+</html>

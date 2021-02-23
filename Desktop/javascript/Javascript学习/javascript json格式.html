@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript json格式</title>
+
+</head>
+<body>
+<p id="demo"></p>
+<script>
+    // var text = '{ "sites" : [' +
+	// '{ "name":"Runoob" , "url":"www.runoob.com" },' +
+	// '{ "name":"Google" , "url":"www.google.com" },' +
+	// '{ "name":"Taobao" , "url":"www.taobao.com" } ]}';
+    var text = '{"sites":[' +
+        '{"name":"google","url":"www.google.com"},' +
+        '{"name":"baidu","url":"www.baidu.com"}]}'
+        // 注意键要打上""
+    tex = JSON.parse(text)
+    document.getElementById('demo').innerHTML=tex.sites[0].name
+
+</script>
+</body>
+</html>

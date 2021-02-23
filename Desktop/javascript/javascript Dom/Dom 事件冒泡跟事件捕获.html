@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dom 事件冒泡跟事件捕获</title>
+    <style>
+        div{
+            width: 50%;
+            height: 200px;
+            background-color: pink;
+            text-align: center;
+        }
+        p{
+            border: springgreen 1px solid;
+        }
+    </style>
+</head>
+<body>
+<pre>
+    使用事件捕获事件addeventlistener后面的参数是True
+    使用事件冒泡addeventlistener后面的参数是False 如果div元素中包含p元素先执行里面的p元素
+</pre>
+
+<div id="div1">
+    <p id="p1">p1</p>
+</div>
+<div id="div2">
+    <p id="p2">p2</p>
+</div>
+<script>
+    document.getElementById('div1').addEventListener('click',function (){alert('div1')},false)
+    document.getElementById('p1').addEventListener('click',function (){alert('p1')},false)
+    document.getElementById('div2').addEventListener('click',function (){alert('div2')},true)
+    document.getElementById('p2').addEventListener('click',function (){alert('p2')},true)
+</script>
+</body>
+</html>

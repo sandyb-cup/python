@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dom跨浏览器实现事件监听</title>
+</head>
+<body>
+<p>不同版本的浏览器对事件监听的函数不一样</p>
+<div id='div1'style="width: 50%;height: 200px;background-color: pink;color: pink;text-align: center">
+    <p id="demo" style="border: springgreen solid 2px;color: black">这是一个小段落</p>
+</div>
+<script>
+    var x = document.getElementById('div1');
+    if (x.addEventListener){
+        x.addEventListener('click',function (){alert('div1')},false)
+    }
+    else if(x.attachEvent){
+        x.attachEvent('click',function (){alert('div1')}, false)
+    }
+</script>
+</body>
+</html>

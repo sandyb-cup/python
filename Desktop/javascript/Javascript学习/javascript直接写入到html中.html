@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript直接写入到html中</title>
+</head>
+<body>
+<h1>javascript直接写入到html中</h1>
+<p style="white-space: pre-wrap">
+    下面是时间:
+    <script>
+    document.write(Date())
+</script>
+    <b>注意:</b>
+    document.write仅仅对html输出内容
+    如果当文件加载完成之后进行函数调用script会对html内容进行覆盖 <b style="color: rgba(255,24,65,0.56)">(下面点击按钮看实例)</b>
+</p>
+<script>
+    function click_button(){
+        document.write(Date())
+    }
+</script>
+<button type="button" onclick="click_button()">点击显示当前时间</button>
+</body>
+</html>

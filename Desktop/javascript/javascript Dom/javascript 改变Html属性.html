@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 改变元素属性</title>
+</head>
+<body>
+<p>
+    <img id=exchange src="../Javascript学习/images/lightness.gif" alt="灯灭" height="180" width="100">
+</p>
+<script>
+    var num = 0;
+    function exchange(){
+        num +=1;
+        if (num%2==0){
+            return document.getElementById('exchange').src='../Javascript学习/images/light.gif';
+            console('灯亮');
+
+        }
+        else{
+            return document.getElementById('exchange').src='../Javascript学习/images/lightness.gif';
+            console('灯灭');
+        }
+    }
+
+</script>
+<button type="button" onclick="exchange()">点亮</button>
+</body>
+</html>

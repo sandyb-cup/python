@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>e-mail验证</title>
+</head>
+<body>
+<script>
+    function validateForm(){
+        var email = document.forms['myForm']['email'].value
+
+        var point = email.indexOf('.')
+        var aite = email.indexOf('@')
+        //2913329720@qq.com
+        alert('point:'+point+'aite:'+aite)
+        if(aite+3!=point||point+3!=length(email)||point<1){
+            alert('邮箱格式错误')
+            return false
+        }
+    }
+
+</script>
+<form action="" name="myForm" onsubmit="validateForm()">
+    email:<input type="text" name="email">
+    <button type="submit">提交</button>
+
+</form>
+</body>
+</html>

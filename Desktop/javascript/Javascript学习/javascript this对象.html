@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript this全局对象</title>
+
+</head>
+<body>
+<p id='demo'></p>
+<script>
+    var person={
+        height : '170',
+        hair :'blank',
+        summary: function(){
+           return this.hair //this会调用全局属性来找目标
+        }
+    }
+    document.getElementById('demo').innerHTML=person.summary()
+</script>
+
+</body>
+</html>

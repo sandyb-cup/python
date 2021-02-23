@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript 条件运算符号</title>
+
+</head>
+<body>
+<h1>这里使用的是逻辑运算符号？的使用方法</h1>
+<input type="text" id="age" placeholder="请输入你的年龄:">
+<script>
+    function get_age(){
+        var age_Num,voteable
+        age_Num = document.getElementById('age').value
+        //?如果age_Num<18voteable的值就是年龄太小 如果age_Num>18 voteable的值=年龄太大
+        voteable = (age_Num<18)?'年龄太小':'年龄太大';
+
+        document.getElementById('output_age').innerHTML=voteable
+    }
+</script>
+<p id="output_age"></p>
+<button type="button" onclick="get_age()">按下按钮查看</button>
+</body>
+</html>

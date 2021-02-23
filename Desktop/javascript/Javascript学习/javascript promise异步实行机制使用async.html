@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript promise实现异步机制</title>
+</head>
+<body>
+<script>
+    function print(delay, message){
+        return new Promise(function (resolve,reject){
+            setTimeout(function (){
+                console.log(message);
+            },delay)
+        })
+    }
+    // 异常处理机制
+    async function asynecFun(){
+        try{
+            await new Promise(function (resolve, reject){
+                throw 'Some error';
+                reject ('Some error')
+            //
+            })
+        }
+        catch (err){
+            console.log(err)
+        }
+    }
+    asynecFun()
+</script>
+</body>
+</html>

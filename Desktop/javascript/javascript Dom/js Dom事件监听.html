@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dom事件处理</title>
+</head>
+<body>
+<p>使用addeventlistener添加事件监听</p>
+<button type="button" id="button">
+    按钮
+</button>
+<p id="show_date"></p>
+<script>
+    document.getElementById('button').addEventListener('click',displaydate)
+    document.getElementById('button').removeEventListener()
+    function displaydate(){
+        document.getElementById('show_date').innerHTML=Date();
+    }
+</script>
+</body>
+</html>

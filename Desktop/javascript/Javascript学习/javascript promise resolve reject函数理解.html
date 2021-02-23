@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript promise resolve reject函数理解</title>
+
+</head>
+<body>
+<script>
+    new Promise(function (resolve,reject){
+        var a = 2;
+        var b = 3;
+        //程序运行出错的时候调用reject
+        if (b==0) reject('Diveide Zero')
+        //    程序正常运行的时候调用resolve函数
+        else resolve(a/b)
+    //    下面的逻辑类似于try catch
+    //    then函数能将function中的函数添加到promise序列当中
+    //    下面的value值是上面resolve后面计算出来的值 正常运行的结果
+    }).then(function (value){
+        console.log('a/b'+value);
+    //    catch函数当promise运行出错的时候执行函数
+    }).catch(function (err){
+        console.log('err')
+    //    promise最后的时候执行函数这个函数是promise最后一定会执行的
+    }).finally(function (){
+        console.log('End');
+    })
+</script>
+</body>
+</html>

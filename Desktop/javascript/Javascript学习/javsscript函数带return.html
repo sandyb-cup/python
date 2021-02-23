@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript函数带return</title>
+</head>
+<body>
+<h1>函数带return</h1>
+<p id="demo">
+
+</p>
+<script>
+    function test_return(para1,para2){
+        c = 5
+        return para1 + para2
+    }
+    document.getElementById('demo').innerHTML=test_return('1','2')
+</script>
+
+<button type="button" onclick="test_return('1','2')">
+    按钮
+</button>
+</body>
+</html>

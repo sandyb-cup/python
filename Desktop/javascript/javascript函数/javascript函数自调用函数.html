@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript 子调用函数</title>
+</head>
+<body>
+<script>
+    (function test(){
+        var a = 1;
+        var b = 2;
+        console.log(a+b)
+        return a+b;
+    })();
+//    注意函数要用()包括
+</script>
+</body>
+</html>
