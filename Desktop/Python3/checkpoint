@@ -1,0 +1,2 @@
+model_checkpoint_path: "Net_save_test.ckpt"
+all_model_checkpoint_paths: "Net_save_test.ckpt"
